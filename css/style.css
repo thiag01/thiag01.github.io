@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
 /*
 font-family: 'Archivo', sans-serif;
 font-family: 'Archivo Black', sans-serif;
@@ -242,18 +243,21 @@ h1{
 /*
  ==  PAAAARTE 2 
  */
+#front{
+	background-color: #262626;
+}
 .descri{
-  background-color: #14D2A0;
+  background-color: #262626;
   padding: 72px;
+  color: #fff;
 }
 a{
   text-decoration:none;
 }
-main, .main{
-  background:#262626;
+.main{
+  background: #14D2A0;
   transition:background-color 600ms linear;
   display:block;
-
 }
 .main,main,main a{
   color:#fff;
@@ -261,11 +265,12 @@ main, .main{
 .progressbar {
   position:relative;
   display:block;
-  margin-bottom:15px;
-	/* margin-top: 15px; */
+  margin-bottom: 45px;
+  /* margin-top: 15px; */
   width:100%;
-  background:#2f2f2f;
-  height: 15px;
+  background: #14d2a0;
+  border: 3px solid #262626;
+  /* height: 22px; */
   -webkit-transition:0.4s linear;
   -moz-transition:0.4s linear;
   -ms-transition:0.4s linear;
@@ -294,7 +299,9 @@ main, .main{
 }
 .progressbar-bar {
   height: 15px;
-  width:0px;
+  /* width:0px; */
+  border: 3px solid #262626;
+  background: #262626;
 }
 .progress-bar-percent {
     position: absolute;
@@ -303,7 +310,7 @@ main, .main{
     font-size: 15px;
     height: 15px;
     line-height: 35px;
-    color: #ffffff;
+    color: #262626;
 }
 
 h1,h2,h3,h4,h5,p{
@@ -328,6 +335,10 @@ h1,h2,h3,h4,h5,p{
   padding-top:1.6250em;
   padding-bottom:0;
   letter-spacing:0;
+  line-height: 30px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  text-align: justify;
 }
 .medium,h4{
   font-size:20px;
@@ -360,75 +371,32 @@ h1,h2,h3,h4,h5,p{
   padding-bottom:0;
   text-transform:uppercase;
 }
-.huge{
-  font-family:"Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size:110px;
-  font-weight:300;
-  line-height:1.19em;
-  padding-top:0.2364em;
-  padding-bottom:0;
-  text-transform:uppercase
-}
-.contact{
-  width: 100%;
-  background-color: #0A7DE6; 
-  font-family: Arial;
-  display: block;
-}
 
-.contato:after{
-  content: "";
-  width: 100%;
-  max-width: 90px;
-  margin-top: 20px;
-  height: 8px;
-  display: block;
-  background: #262626;
-  position: absolute;
-}
-.infg, .infgray{
-  width: 50%;  
-  padding-top: 52px;
-  padding-right: 78px;
-  padding-bottom: 78px;
-  padding-left: 78px;
-  box-sizing: border-box;
-}
-.infgray{
-  width: 100%;
-  background-color: #262626;
-  color: #fff;
-  line-height: 1.6250em;
-  padding-top: 1.6250em;
-  padding-bottom: 0;
-  letter-spacing: 0;
-  font-size: 16px;
-  font-family: times;
-}
-.fab{
-  font-size: 24px;
-  color: rgb(69,69,69);
-  margin: 5px 5px;
-}
 .face{
   width: 100%;
   background: linear-gradient(to right, #14d2a0 50%,#0a7de6 50%);
   padding: 80px 20px 0px;
+  border: 1px solid red;
 }
 #Camada_1{
-	display: block;
-	margin:-5px auto;
+	display: none;
+	margin: 0px auto;
 }
-.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#262626;}
+.nome{
+    font-weight: bold;
+    padding-bottom: 1.6250em;
+}
+.st0{fill-rule:evenodd;clip-rule:evenodd;fill: #000;}
 .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#0A7DE6;}
 li>p{
   padding-top:0
 }
-.Header, .descri, .cont, .infgray{
+.Header, .descri, .cont, .infgray, .medias{
+  background-color: #262626;
   padding:26px 26px 52px;
 }
 @media (min-width: 600px){
-  .Header, .descri, .infgray{
+  .Header, .descri, .infgray, .medias{
     padding:26px 52px 52px;
   }
   .btn{
@@ -437,66 +405,65 @@ li>p{
   }
 }
 @media (min-width: 800px){
-  .Header, .descri, .infgray{
-    padding:52px 78px 78px;
+  .Header, .descri, .infgray, .medias{
+    padding: 52px 78px 80px;
     font-size: 18px;
   }
-  .contact{
-
-	display: flex;
-  }
-  .infgray{
-	  width: 50%;
-	  font-size: 18px;
-  }
-  .medias {
-	dsiplay: block
+  #Camada_1{
+	display: block;
+	margin: 0px auto;
 }
 }
 @media (min-width: 1050px){
-.Header {
+    .Header {
     padding-top: 0;
-    padding-bottom: 0;
     width: 50%;
     top: 0;
-    bottom: 0;s
+    bottom: 0;
     left: 0;
     opacity: 0;
     animation: showCopy 0ms 1400ms linear forwards;
     float: left;
-	background-color: #0A7DE6;
+    background-color: #262626;
    }
-.container{
+   .container{
 	   height: 100%;
    }
-.Header-content {
+    .Header-content {
 	max-width: 475px;
-	margin-top: 145px;
+	margin-top: 115px;
 	}
-	.descri{
+	.descri, .medias{
 	padding-top: 145px;
-	padding-bottom: 255px;
 	}
-	  .medias {
-	dsiplay: block
-    }
+    #contato .medias{
+		width: 50%;
+	}
+	#Camada_2{
+	display: block;
+	margin: 0px auto;
+}
 }
 
 .Header-title{
   position:relative;
-  padding-bottom:26px;
+  padding-bottom: 46px;
   margin-bottom:26px;
-  text-transform:uppercase
+  text-transform:uppercase;
+  color: #fff;
 }
 .Header-title:after{
   content:"";
   width:100%;
-  max-width: 94px;
-  height: 8px;
-  background: #262626;
+  max-width: 84px;
+  height: 5px;
+  background: #0A7DE6;
   position:absolute;
   left:0;
   bottom:0;
+}
+.front:after{
+	background-color: #14D2A0;
 }
 .Header-subtitle{
   font-weight:700;
@@ -507,11 +474,29 @@ li>p{
     animation:fadeIn 800ms 500ms ease-in-out forwards
   }
 }
-  .Header-intro{
+.Header-content .botao{
+  padding: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: #14D2A0;
+  border: #14D2A0 solid 0.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: block;
+}
+.Header-intro{
     padding:0;
-    margin-bottom:26px;
-    color: #262626;
-	padding-top: 26px;
+    margin-bottom: 55px;
+    color: #fff;
+    padding-top: 50px;
+    line-height: 30px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    text-align: justify;
 }
 @media (min-width: 1050px){
   .Header-intro{
@@ -521,13 +506,13 @@ li>p{
   .Project-link {
     padding: 0px 0 30px;
     font-weight: normal;
-   }
+    }
    .progressbar{
-	   margin-top: 30px;
-   }
-      .container{
+	   margin-top: 10px;
+	}
+   .container{
 	   height: 100%;
-   }
+    }
 }
 .Projects{
   list-style:none;
@@ -561,11 +546,16 @@ li>p{
     animation:showProjects 1800ms 1800ms cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
   }
   .box{
-  width: 50%;
-  height: 1px;
-  background-color: #07afaf;
-  color: #262626;
-  float: right;
+     width: 50%;
+     height: 1px;
+     background-color: #07afaf;
+     color: #262626;
+     float: right;
+  }
+  #contato .medias .social {
+    padding-top: 1.6250em;
+    padding-bottom: 1.6250em;
+	color: greenyellow;
   }
 }
 .Project-item{
@@ -585,8 +575,9 @@ li>p{
   padding-top:1.3000em;
   padding-bottom: 10px;
   padding:0;
-  font-family:"Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #fff;
+  font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #262626;
 }
 @keyframes fadeIn{
   0%{
@@ -681,19 +672,65 @@ hr{
 	border: 0;
 	background-color:#14D2A0;
 }
-.footer{
-  clear: both;
+#contato{
+  width: 100%;
+  border: 0.1px solid transparent;
+  color: snow;
   position: relative;
-  z-index: 1;
+}
+#contato .medias{
   background-color: #262626;
-  color: #fff;
-  text-align: center;	
-  padding: 5px;	 
-  line-height: 1.2;
- }
- .footer small{
-	 opacity: 0.5;
- }
+  float: left;
+}
+#contato .medias .social{
+	padding-top: 1.6250em;
+	padding-bottom: 1.6250em;
+}
+#contato .svgface{
+	/* display: block; */
+	position: absolute;
+	bottom: -1070px;
+	right: 40px;
+}
+.print-cv{
+	margin: 20px 0px;
+	font-weight: bold;
+}
+.print-cv a, .mail{
+	text-decoration: none;
+	color: #0A7DE6;
+}
+.fab, .fas, .far{
+	color: #fff;
+	font-size: 28px;
+	margin-right: 8px;
+	padding: 10px;
+}
+.fa-print{
+	font-size: 25px;
+	margin-left: 8px;
+	color: #0A7DE6;
+}
+.designer, .mail, .print-cv{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+}
+#logo-th{
+	display: block;
+	margin: 25px 0px 0px;
+	width: 60px;
+	opacity: 0.3;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.footer{
+   clear: both;
+   border-top: 2px solid gray;
+   color: gray;
+   font-size: 13px;
+}
+.st0{fill-rule:evenodd;clip-rule:evenodd;fill: rgb(9,113,208);}
+.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#0A7DE6;}
 .heart{
   animation-name: pulse;
   animation-duration: 1s;
@@ -706,11 +743,11 @@ hr{
 .pulse-slow {
     opacity: 1 !important;
     visibility: visible !important;
-    -webkit-animation: pulseSlow infinite alternate 0.5s ease-in-out;
-    -moz-animation: pulseSlow infinite alternate 0.5s ease-in-out;
-    -ms-animation: pulseSlow infinite alternate 0.5s ease-in-out;
+    -webkit-animation: pulseSlow infinite alternate 0.8s ease-in-out;
+    -moz-animation: pulseSlow infinite alternate 0.8s ease-in-out;
+    -ms-animation: pulseSlow infinite alternate 0.8s ease-in-out;
     -o-animation: pulseSlow infinite alternate 0.5s ease-in-out;
-     animation: pulseSlow infinite alternate 0.5s ease-in-out;
+    animation: pulseSlow infinite alternate 0.5s ease-in-out;
 }
 @keyframes pulseSlow {
   0% {
