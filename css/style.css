@@ -765,9 +765,10 @@ main .progress-bar-percent{
 	color: #0A7DE6;
 }
 .print-cv img{
-	color: red;
 	margin-right: 12px;
 	padding-top: 0px;
+	position: relative;
+	top: 5px;
 }
 .foot{
 	clear: both;
