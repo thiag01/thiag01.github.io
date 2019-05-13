@@ -764,6 +764,11 @@ hr{
 main .progress-bar-percent{
 	color: #0A7DE6;
 }
+.print-cv img{
+	color: red;
+	margin-right: 12px;
+	padding-top: 0px;
+}
 .foot{
 	clear: both;
 	background-color: #262626;
