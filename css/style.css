@@ -690,12 +690,11 @@ hr{
 	/* display: block; */
 }
 
-.fab, .far{
+.fab{
 	color: #fff;
 	font-size: 16px;
 	margin-right: 8px;
 	padding: 6px 16px;
-	/* border: 2px solid gray; */
 	border: #14D2A0 solid 0.1rem;
 	margin-top: 10px;
 	width: 70px;
