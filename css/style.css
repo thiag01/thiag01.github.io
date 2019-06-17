@@ -239,7 +239,10 @@ h1{
   }
 }
 
-
+.btn-left{
+	color: #0a7de6;
+	border-color: #0a7de6;
+}
 /*
  ==  PAAAARTE 2 
  */
@@ -779,3 +782,4 @@ main .progress-bar-percent{
 	font-size: 13px;
 	color: #fff;
 }
+
