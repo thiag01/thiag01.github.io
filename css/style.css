@@ -146,12 +146,12 @@ h1{
 
 .split.esquerdo .button:hover{
   background-color: rgba(92, 92, 92, 0.3);
-  border-color: rgba(92, 92, 92, 0.3);
+  color: rgba(92, 92, 92, 0.6);
 }
 
 .split.direito .button:hover{
   background-color: rgba(92, 92, 92, 0.3);
-  border-color: rgba(92, 92, 92, 0.3);
+  color: rgba(92, 92, 92, 0.3);
 }
 
 .container{
