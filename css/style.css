@@ -146,7 +146,7 @@ h1{
 
 .split.esquerdo .button:hover{
   background-color: rgba(92, 92, 92, 0.3);
-  border-color: yellow;
+  border-color: rgba(92, 92, 92, 0.3);
 }
 
 .split.direito .button:hover{
