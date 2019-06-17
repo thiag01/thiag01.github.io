@@ -433,7 +433,7 @@ li>p{
 	   height: 100%;
    }
     .Header-content {
-	max-width: 475px;
+	/* max-width: 475px; */
 	margin-top: 115px;
 	}
 	.descri, .medias{
