@@ -310,7 +310,8 @@ a{
     position: absolute;
     right: 10px;
     top: -40px;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: Oswald;
     font-weight: 400;
     height: 15px;
     line-height: 35px;
