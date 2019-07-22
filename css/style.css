@@ -567,6 +567,9 @@ li>p{
 .Project-item{
     position:relative;
   }
+.Project-item:first-child{
+  	padding-top: 50px;
+  }
 .Project-link {
   width: 100%;
   display: block;
