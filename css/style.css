@@ -431,6 +431,7 @@ li>p{
     animation: showCopy 0ms 1400ms linear forwards;
     float: left;
     background-color: #262626;
+    border-bottom: 50px solid #262626;
    }
    .container{
 	   height: 100%;
