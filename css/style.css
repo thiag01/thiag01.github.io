@@ -784,6 +784,9 @@ hr{
 .foot .footer{
 	text-align: center;
 	font-size: 13px;
-	color: #fff;
+	color: #5d5d5d;
+	line-height: 22px;
+	padding-bottom: 1.6250em;
 }
+
 
