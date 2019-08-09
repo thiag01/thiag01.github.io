@@ -308,7 +308,7 @@ a{
 }
 .progress-bar-percent {
     position: absolute;
-    right: 10px;
+    right: 0px;
     top: -40px;
     font-size: 16px;
     font-family: Oswald;
