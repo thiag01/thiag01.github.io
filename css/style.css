@@ -222,7 +222,7 @@ h1{
   width: 25%;
 }
 
-.hover-direito .esquerdo :before{
+.hover-direito .esquerdo:before{
   z-index: 2;
 }
 
