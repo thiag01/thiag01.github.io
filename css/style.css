@@ -483,10 +483,10 @@ li>p{
 }
 .Header-content .botao{
   padding: 1.3rem;
-  width: 15rem;
-  text-align: center;
+  /* width: 15rem; */
+  /* text-align: center; */
   color: #14D2A0;
-  border: #14D2A0 solid 0.2rem;
+  /* border: #14D2A0 solid 0.2rem; */
   font-size: 1rem;
   font-weight: 400;
   font-family: 'Oswald', sans-serif;
