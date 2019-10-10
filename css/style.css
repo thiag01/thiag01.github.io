@@ -482,7 +482,7 @@ li>p{
   }
 }
 .Header-content .botao{
-  padding: 1.3rem;
+  padding: 1.3rem 0;
   /* width: 15rem; */
   /* text-align: center; */
   color: #14D2A0;
