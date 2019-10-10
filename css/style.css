@@ -713,9 +713,9 @@ hr{
 	color: #0A7DE6;
 }
 .print-cv{
-	border: #0A7DE6 solid 0.1rem;
+	/* border: #0A7DE6 solid 0.1rem; */
 	display: inline-block;
-	padding: 20px;
+	padding: 20px 0;
 	font-size: 1rem;
 	font-weight: 400;
 	font-family: 'Oswald', sans-serif;
