@@ -343,7 +343,7 @@ h1,h2,h3,h4,h5,p{
   letter-spacing:0;
   line-height: 30px;
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
 }
 .medium,h4{
@@ -502,7 +502,7 @@ li>p{
     padding-top: 50px;
     line-height: 30px;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
 }
 @media (min-width: 1050px){
