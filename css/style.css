@@ -343,8 +343,8 @@ h1,h2,h3,h4,h5,p{
   letter-spacing:0;
   line-height: 30px;
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 16px;
-  text-align: justify;
+  font-size: 15px;
+  text-align: left;
 }
 .medium,h4{
   font-size:20px;
@@ -502,8 +502,8 @@ li>p{
     padding-top: 50px;
     line-height: 30px;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 16px;
-    text-align: justify;
+    font-size: 15px;
+    text-align: left;
 }
 @media (min-width: 1050px){
   .Header-intro{
@@ -698,14 +698,14 @@ hr{
 }
 
 .fab{
-	color: #fff;
-	font-size: 16px;
+	color: #626262;
+	font-size: 20px;
 	margin-right: 8px;
-	padding: 6px 16px;
-	border: #14D2A0 solid 0.1rem;
+	padding: 10px 0px;
+	/* border: #14D2A0 solid 0.1rem; */
 	margin-top: 10px;
 	width: 70px;
-	text-align: center;
+	/* text-align: center; */
 }
 .fa-print{
 	font-size: 25px;
