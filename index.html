@@ -37,7 +37,7 @@
 
 <body>
 
-   <div id="navegacao">
+  <div id="navegacao">
       <div class="container">
 
          <nav class="navbar navbar-expand-lg">
@@ -45,12 +45,15 @@
                <img src="https://via.placeholder.com/140x40">
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon">
-                  ...
-               </span>
-            </button>
+            <!-- menu -->
+            <div id="nav-icon3" class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse"
+               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -76,23 +79,27 @@
          </nav>
 
          <div class="chamada d-flex flex-column justify-content-center">
-            <div class="container">
-               <p class="mb-2"> Olá, meu nome é <span style="color:#20B787"><strong> Thiago Honorato</strong> </span>,
-                  sou Designer Freelancer e Front-End.</p>
-               <div class="row">
-                  <div class="col-md-7">
-                     <h1>Web Developer Web Developer Web Developer </h1>
-                  </div>
-                  <div class="col-md-5">
-                     <p class="txt mt-3"> Fascinado por inovação e interatividade, busco sempre desenvolver projetos
-                        atraentes que ganham vida usando transições e animações que atendem aos meus clientes,
-                        manipulando as tecnologias mais sofisticadas disponíveis atualmente para websites e aplicativos
-                        totalmente interativos e responsivos. </p>
-                     <a href="#" class="botao" style="background-color: #20B787;">Ver Projetos</a> <a href="#"
-                        class="botao">Visualizar CV</a>
-                  </div>
+
+            <p class="mb-2"> Olá, meu nome é <span style="color:#20B787"><strong> Thiago</strong> </span>,
+               sou Designer Freelancer e Desenvolvedor Front-End.</p>
+            <div class="row">
+               <div class="col-md-7">
+                  <h1>Web Developer </h1>
+                  <!-- TypeWriter -->
+                  <h1 href="#" class="typewrite" data-period="2000"
+                     data-type="[ &quot;Designer  &quot;, &quot;Front-End &quot;, &quot;Freelancer &quot; ]"><span
+                        class="wrap">Designer</span></h1>
+               </div>
+               <div class="col-md-5">
+                  <p class="txt mt-3"> Fascinado por inovação e interatividade, busco sempre desenvolver projetos
+                     atraentes que ganham vida usando transições e animações que atendem aos meus clientes,
+                     manipulando as tecnologias mais sofisticadas disponíveis atualmente para websites e aplicativos
+                     totalmente interativos e responsivos. </p>
+                  <a href="#" class="botao" style="background-color: #20B787;">Ver Projetos</a> <a href="#"
+                     class="botao">Visualizar CV</a>
                </div>
             </div>
+
          </div>
       </div>
    </div>
@@ -120,42 +127,127 @@
    <section id="sobre-mim">
       <div class="container">
          <div class="row">
+            <h2 class="col-12">Sobre mim</h2>
             <div class="col-md-7">
-               <h2>Sobre mim</h2>
-               <p>When I’m not making design-related decisions like what UX strategy to employ in addressing my users'
-                  pain points,
-                  or settling on what grid system to use on a particular layout, or fussing over what font family/colour
-                  to go with
-                  on a mobile or web app, I’m either at VGC outdoor basketball court hooping or at home playing games
-                  like NBA 2K20,
-                  FIFA 2020, Uncharted, and the likes.
+               <p>
+                  Sou Thiago Honorato, me formei em Design Gráfico em 2018, mas desde antes da faculdade
+                  já me interessava em atuar na area de tecnologia e criação. Durante a minha carreira
+                  trabalhei em agencias, e-commerces e grafica,
                </p>
-               <p>When I’m not making design-related decisions like what UX strategy to employ in addressing my users'
-                  pain points,
-                  or settling on what grid system to use on a particular layout, or fussing over what font family/colour
-                  to go with
-                  on a mobile or web app, I’m either at VGC outdoor basketball court hooping or at home playing games
-                  like NBA 2K20,
-                  FIFA 2020, Uncharted, and the likes.
+
+               <div class="row">
+                  <div class="col-6">
+                     <ul class="skill-bars">
+                        <li>
+                           <div class="progress percent90"><span>90%</span></div>
+                           <strong>HTML5</strong>
+                        </li>
+                        <li>
+                           <div class="progress percent85"><span>85%</span></div>
+                           <strong>CSS | SASS</strong>
+                        </li>
+                        <li>
+                           <div class="progress percent70"><span>70%</span></div>
+                           <strong>Javascript | JQuery</strong>
+                        </li>
+                        <li>
+                           <div class="progress percent75"><span>75%</span></div>
+                           <strong>Wordpress</strong>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-6">
+                     <ul class="skill-bars">
+                        <li>
+                           <div class="progress percent90"><span>90%</span></div>
+                           <strong>Adobe XD</strong>
+                        </li>
+                        <li>
+                           <div class="progress percent85"><span>85%</span></div>
+                           <strong>Photoshop</strong>
+                        </li>
+                        <li>
+                           <div class="progress percent70"><span>70%</span></div>
+                           <strong>Illustrator</strong>
+                        </li>
+                        <li>
+                           <div class="progress percent75"><span>75%</span></div>
+                           <strong>Indesign</strong>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <p>
+                  Sou Thiago Honorato, me formei em Design Gráfico em 2018, mas desde antes da faculdade
+                  já me interessava em atuar na area de tecnologia e criação. Durante a minha carreira
+                  trabalhei em agencias, e-commerces e grafica,
                </p>
+
+
+            </div>
+            <div class="col-md-5 align-self-center text-center">
+               <img src="https://via.placeholder.com/400x450" class="img-fluid">
+               <div class="socials">
+                  <i class="fab fa-codepen"></i>
+                  <i class="fab fa-behance-square"></i>
+               </div>
             </div>
 
          </div>
       </div>
    </section>
-   <section id="portfolio">
+   <section id="oquefaco">
+      <div class="container">
+         <div class="row flex-row-reverse">  <!--flex-xl-row-reverse-->
+            <div class="col-md-6">
+               <h2>Habilidades</h2>
+               <div class="descricao">
+                  <div class="descri-icon">
+                     <picture>
+                        <img src="assets/img/web 1.svg">
+                     </picture>
+                  </div>
+                  <div class="descri-txt">
+                     <h4 class="descri-titulo">Desenvolvimento Web</h4>
+                     Criação de sites modernos aplicando técnicas de UX, criação de protótipos navegáveis, criação de
+                     layouts e programação front-end. </div>
+               </div>
+               <div class="descricao">
+                  <div class="descri-icon">
+                     <picture>
+                        <img src="assets/img/digital.svg" width="50px" style="margin-left:-5px">
+                     </picture>
+                  </div>
+                  
+                  <div class="descri-txt">
+                     <h4 class="descri-titulo">Digital</h4>
+                     Desenvolvimento de sites modernos aplicando técnicas de UX, criação de layouts, protótipos navegáveis e programação front-end. </div>
+               </div>
+               <div class="descricao">
+                  <div class="descri-icon">
+                     <picture>
+                        <img src="assets/img/color-palette 1.svg">
+                     </picture>
+                  </div>
+                  <div class="descri-txt">
+                     <h4 class="descri-titulo">Impressos</h4>
+                     Criação de todo tipo de material. Cartão de visita, folheto, folder, embalagem, estampa, projeto gráfico de livro e revista etc.</div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <img src="https://uploads-ssl.webflow.com/5e75c747e5ba0e1edd93b285/5e7f392329502f19b7b274d1_Skills_image.svg" class="img-responsive">
+            </div>
+         </div>
+      </div>
 
    </section>
-
-
-
-
 
    <!-- Works Section -->
    <section id="work" class="bg-light">
       <div class="container">
          <div class="row">
-
+            <h2 class="col-12">Habilidades</h2>
             <div class="col-lg-12 px-25">
                <ul class="work-filter">
                   <li class="filter all active" data-filter="*">Todos</li>
@@ -245,14 +337,37 @@
                      </div>
                   </div>
                </div>
+               <a href="#" class="botao" style="background-color: #20B787;">Ver Projetos</a>
             </div>
          </div>
       </div>
-   </section>
-
-   <!-- End Works Section -->
-
-   <!-- jQuery -->
+   </section> 
+   <footer class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h2> Entre em Contato</h2>
+            </div>
+            <div class="col-md-6">
+               <form>
+                  <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input class="form-control form-control-sm" type="text" id="nome">
+                  </div>
+                  <div class="form-group">
+                     <label for="email">E-mail</label>
+                     <input class="form-control form-control-sm" type="text" id="email">
+                   </div>
+                   <div class="form-group">
+                     <label for="textarea">Mensagem</label>
+                     <textarea class="form-control" id="textarea" rows="3"></textarea>
+                   </div>
+                   <button type="submit" class="btn btn-primary mb-2">Enivar Mensagem</button>
+                </form>
+            </div>
+         </div>
+      </div>
+   </footer>
 
    <script src="./assets/js/jquery.min.js.download"></script>
    <script src="./assets/js/isotope.pkgd.min.js.download"></script>
