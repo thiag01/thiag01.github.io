@@ -18,21 +18,11 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <!-- Bootstrap  -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-   <!-- Animate.css -->
-   <!-- <link rel="stylesheet" href="./assets/css/animate.css"> -->
-   <!-- Awesome Fonts-->
-   <!-- <link rel="stylesheet" href="./assets/css/all.min.css"> -->
-   <!-- Flexslider  -->
-   <!-- <link rel="stylesheet" href="./assets/css/flexslider.css"> -->
-   <!--Main Styles Css-->
-   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-
- 
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./assets/css/mystyle.css">
 </head>
 
 <body>
@@ -58,16 +48,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
+                  <li class="nav-item mr-3">
                      <a class="nav-link" href="#">Quem sou<span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mr-3">
                      <a class="nav-link" href="#">O que faço<span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mr-3">
                      <a class="nav-link" href="#">Portfólio</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mr-3">
                      <a class="nav-link mr-2" href="#">Contato</a>
                   </li>
                </ul>
@@ -127,7 +117,10 @@
    <section id="sobre-mim">
       <div class="container">
          <div class="row">
-            <h2 class="col-12">Sobre mim</h2>
+            <div class="col-12">
+               <span class="subtitle">você pode conhecer um pouco...</span>
+               <h2>Quem sou</h2>
+            </div>
             <div class="col-md-7">
                <p>
                   Sou Thiago Honorato, me formei em Design Gráfico em 2018, mas desde antes da faculdade
@@ -200,8 +193,9 @@
    <section id="oquefaco">
       <div class="container">
          <div class="row flex-row-reverse">  <!--flex-xl-row-reverse-->
-            <div class="col-md-6">
-               <h2>Habilidades</h2>
+            <div class="col-md-5">
+               <span class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</span>
+               <h2>O que faço</h2>
                <div class="descricao">
                   <div class="descri-icon">
                      <picture>
@@ -216,7 +210,7 @@
                <div class="descricao">
                   <div class="descri-icon">
                      <picture>
-                        <img src="assets/img/digital.svg" width="50px" style="margin-left:-5px">
+                        <img src="assets/img/digital.svg" width="50px" style="margin-left:-10px">
                      </picture>
                   </div>
                   
@@ -236,7 +230,7 @@
                </div>
             </div>
             <div class="col-md-6">
-               <img src="https://uploads-ssl.webflow.com/5e75c747e5ba0e1edd93b285/5e7f392329502f19b7b274d1_Skills_image.svg" class="img-responsive">
+               <!-- <img src="https://uploads-ssl.webflow.com/5e75c747e5ba0e1edd93b285/5e7f392329502f19b7b274d1_Skills_image.svg" class="img-responsive"> -->
             </div>
          </div>
       </div>
@@ -247,7 +241,10 @@
    <section id="work" class="bg-light">
       <div class="container">
          <div class="row">
-            <h2 class="col-12">Habilidades</h2>
+            <div class="col-12">
+               <span class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</span>
+               <h2>Portfólio</h2>
+            </div>
             <div class="col-lg-12 px-25">
                <ul class="work-filter">
                   <li class="filter all active" data-filter="*">Todos</li>
@@ -337,7 +334,9 @@
                      </div>
                   </div>
                </div>
-               <a href="#" class="botao" style="background-color: #20B787;">Ver Projetos</a>
+               <div class="col-12 text-center">
+                  <a href="#" class="botao" style="background-color: #20B787;">Ver Projetos</a>
+               </div>
             </div>
          </div>
       </div>
@@ -345,10 +344,11 @@
    <footer class="footer">
       <div class="container">
          <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7">
+               <span class="subtitle">sinta-se à vontade para contatar...</span>
                <h2> Entre em Contato</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                <form>
                   <div class="form-group">
                     <label for="nome">Nome</label>
@@ -362,18 +362,34 @@
                      <label for="textarea">Mensagem</label>
                      <textarea class="form-control" id="textarea" rows="3"></textarea>
                    </div>
-                   <button type="submit" class="btn btn-primary mb-2">Enivar Mensagem</button>
+                   <button type="submit" class="btn btn-primary mb-5">Enivar</button>
                 </form>
             </div>
+            <div class="col-md-7">
+                  <h4>Let's connect</h4>
+                  <p>Telefone / E-mail / WhatsApp</p>
+            </div>
+            <div class="col-md-5">
+                  Copyright. ChukwumaUdokporo 2020.
+            </div>
+
          </div>
       </div>
    </footer>
+   <!-- End Works Section -->
+
+   <!-- jQuery -->
 
    <script src="./assets/js/jquery.min.js.download"></script>
    <script src="./assets/js/isotope.pkgd.min.js.download"></script>
    <script src="./assets/js/imagesloaded.pkgd.min.js.download"></script>
    <script src="./assets/js/custom.js.download"></script>
    <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+   <script type="text/javascript" src="assets/js/scripts.js"></script>
+   <script type="text/javascript" src="assets/js/scripts.js"></script>
+   <script type="text/javascript" src="assets/js/jquery-3.5.1.slim.min.js"></script>
+   <script type="text/javascript" src="assets/js/popper.min.js"></script>
+   <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
    <!-- 
    <form action="https://formspree.io/xnqbkklr" method="POST">
