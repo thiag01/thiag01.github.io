@@ -539,6 +539,7 @@ label{
 #work .work-filter li.active {
     color: #20B787!important;
     /* border: 1px solid var(--minhavar); */
+    /* background-color: var(--minhavar); */
     position: relative;
 }
 #work .work-filter li:hover {
