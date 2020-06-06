@@ -1,7 +1,7 @@
 :root{
   --primary-color: #24262B;
   --secondary-color: #20B787;
-  --font-primary: 'Oxygen', sans-serif;
+  --font-primary: 'DM Sans', sans-serif;
   --padding-section: 80px;
 }
 
@@ -128,7 +128,7 @@ nav{
   font-weight: 900;
 }
 #sobre-mim, #oquefaco{
-  padding: var(--padding-section);
+  padding-top: var(--padding-section);
   background-color: var(--primary-color);
   color: #fff;
   border: 1px solid red;
@@ -176,7 +176,7 @@ nav{
 }
 .skill-bars li {
   height: .4rem;
-  background: #000000;
+  background: #17181b;
   margin-top: 70px;
   padding: 0;
   position: relative;
@@ -208,7 +208,7 @@ nav{
 .skill-bars li .progress span {
   position: absolute;
   right: 0;
-  /* top: -2.3rem; */
+  top: -0.8rem;
   display: block;
   /* font-family: 'PT Sans', sans-serif; */
   color: #00feff;
@@ -352,8 +352,21 @@ width: 100%;
   font-size: 16px;
 }
 
+.btn{
+  background-color: var(--secondary-color);
+  border-radius: 0;
+  outline: 0;
+  border: 0;
+  width: 160px;
+}
 
-
+label{
+  color: #676767;
+}
+.subtitle{
+  color: #676767;
+  font-size: 13px;
+}
 
 
 
