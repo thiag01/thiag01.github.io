@@ -2,10 +2,11 @@
   --primary-color: #24262B;
   --secondary-color: #20B787;
   --font-primary: 'DM Sans', sans-serif;
-  --padding-section: 80px;
+  --padding-section: 70px 0;
 }
-
-body{
+html,
+body {
+  scroll-behavior: smooth;
   font-family: var(--font-primary);
   font-family: 14px;
 }
@@ -122,19 +123,22 @@ nav{
   color: #fff;
   width: 100%;
   height: 80vh;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .chamada h1{
   font-weight: 900;
 }
 #sobre-mim, #oquefaco{
-  padding-top: var(--padding-section);
+  padding: var(--padding-section);
   background-color: var(--primary-color);
   color: #fff;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
-#sobre-mim h2{
-  color: red;
+#portfolio{
+  padding: var(--padding-section);
+}
+#sobre-mim p{
+  font-size: 14px;
 }
 .active:hover {
  color:var(--secondary-color);
@@ -147,15 +151,11 @@ nav{
  text-align: center;
  padding: 10px;
  margin-right:  10px;
+ margin-top: 20px;
  color: #fff;
  transition: .2s;
 }
-.botao:hover{
-  color: red;
-  text-decoration: none;
-  background: var(--secondary-color);
-  color: var(--primary-color)
-}
+
 .txt{
   line-height: 24px;
   margin-bottom: 36px;
@@ -175,9 +175,9 @@ nav{
   padding-left: 0px;
 }
 .skill-bars li {
-  height: .4rem;
+  height: .2rem;
   background: #17181b;
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 0;
   position: relative;
   width: 100%;
@@ -330,20 +330,23 @@ width: 100%;
 
 
 .descricao {
-  padding: 20px 0;
-  margin-bottom: 15px;
+  padding: 30px 0;
+  /* margin-bottom: 60px; */
   text-align: left;
   min-height: 85px;
   display: flex;
   align-items: center;
 }
-
+.descricao:last-child{
+  margin-bottom: 0px;
+}
 .descricao .descri-icon {
   flex: 0 0 60px;
 }
 
 .descricao .descri-txt{
   font-size: 14px;
+  margin-left: 15px;
 }
 
 .descricao .descri-titulo{
@@ -359,13 +362,17 @@ width: 100%;
   border: 0;
   width: 160px;
 }
-
+#oquefaco h2, #sobre-mim h2{
+  margin-bottom: 30px;
+}
 label{
   color: #676767;
 }
 .subtitle{
   color: #676767;
   font-size: 13px;
+  display: block;
+  margin-bottom: 15px;
 }
 
 
