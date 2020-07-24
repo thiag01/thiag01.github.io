@@ -861,9 +861,6 @@ header p {
   transition: all 0.3s ease-in-out;
 }
 
-.digital-svg{
-  margin-left: -10px;
-}
 @media screen and (max-width: 768px) {
   .botao {
     width: 100%;
@@ -874,7 +871,7 @@ header p {
   .descricao .descri-txt{
     margin-left: 10px;
   }
-  .digital-svg{
-    margin-left: 0px;
+  picture{
+    margin-left: 10px;
   }
 }
