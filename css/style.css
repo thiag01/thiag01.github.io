@@ -861,10 +861,12 @@ header p {
   transition: all 0.3s ease-in-out;
 }
 
+.digital-svg{
+  margin-left: -10px;
+}
 @media screen and (max-width: 768px) {
   #sobre-mim, #oquefaco, #porftolio, #rodape{
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 0 15px;
   }
   .botao {
     width: 100%;
@@ -875,5 +877,8 @@ header p {
   .descricao .descri-txt{
     margin-left: 0;
     margin-top: 10px;
+  }
+  .digital-svg{
+    margin-left: 0px;
   }
 }
