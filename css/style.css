@@ -1,4 +1,4 @@
-/* @import "bluish.css"; */
+@import "bluish.css";
 :root{
   --primary-color: #24262B;
   --secondary-color: #20B787;
@@ -862,6 +862,9 @@ header p {
 }
 
 @media screen and (max-width: 768px) {
+  #sobre-mim, #oquefaco, #porftolio, #rodape{
+    padding: 0 20px;
+  }
   .botao {
     width: 100%;
   }
