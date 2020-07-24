@@ -872,8 +872,7 @@ header p {
     display: block;
   }
   .descricao .descri-txt{
-    margin-left: 0;
-    margin-top: 10px;
+    margin-left: 10px;
   }
   .digital-svg{
     margin-left: 0px;
