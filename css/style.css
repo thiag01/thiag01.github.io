@@ -865,9 +865,6 @@ header p {
   margin-left: -10px;
 }
 @media screen and (max-width: 768px) {
-  #sobre-mim, #oquefaco, #porftolio, #rodape{
-    padding: 0 15px;
-  }
   .botao {
     width: 100%;
   }
