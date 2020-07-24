@@ -10,8 +10,6 @@
    <meta name="description" content="">
    <meta name="keywords" content="">
    <meta name="author" content="">
-   <meta name="theme-color" content="#24262b">
-   <meta name="google-site-verification" content="SN6kjJ1i2BG6bX_7FVp7Pk6VgJa19K9DiyJl1m8VnKw" />
    <!--Favicons-->
    <link rel="shortcut icon" href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/images/favicon.png">
    <!--Page Title-->
@@ -23,55 +21,60 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/mystyle.css">
 </head>
 
 <body>
 
    <div id="navegacao">
+      <div id="barra_menu" class="fixed-top">
+
+         <div class="container">
+
+            <nav class="navbar navbar-expand-md">
+               <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/logo_thiago.png">
+               </a>
+
+               <!-- menu -->
+               <div id="nav-icon3" class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#item02">Quem sou</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#oquefaco">O que faço<span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Portfólio</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#rodape"><span>Contato</span></a>
+                     </li>
+                  </ul>
+
+               </div>
+            </nav>
+
+         </div>
+      </div>
       <div class="container">
-
-         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">
-               <img src="https://via.placeholder.com/140x40">
-            </a>
-
-            <!-- menu -->
-            <div id="nav-icon3" class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item mr-4">
-                     <a class="nav-link" href="#sobre-mim">Quem sou<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item mr-4">
-                     <a class="nav-link" href="#oquefaco">O que faço<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item mr-4">
-                     <a class="nav-link" href="#work">Portfólio</a>
-                  </li>
-                  <li class="nav-item mr-4">
-                     <a class="nav-link" href="#rodape">Contato</a>
-                  </li>
-               </ul>
-
-
-            </div>
-         </nav>
 
          <div class="chamada d-flex flex-column justify-content-center">
 
-            <p class="mb-2"> Olá, meu nome é <span style="color:#20B787"><strong> Thiago</strong> </span>,
-               sou Designer Freelancer e Desenvolvedor Front-End.</p>
+            <p class="mb-2"> Olá, meu nome é <span style="color:#20B787">Thiago</span>,
+               sou Web Designer e Desenvolvedor Front-End.</p>
             <div class="row">
                <div class="col-md-7">
                   <h1>Web Developer Web Developer Web </h1>
@@ -83,8 +86,9 @@
                <div class="col-md-5">
                   <p class="txt mt-3"> Fascinado por inovação e interatividade, busco sempre desenvolver projetos
                      atraentes que ganham vida usando transições e animações que atendem aos meus clientes,
-                </p>
-                  <a href="#" class="botao" style="background-color: #20B787;">Ver Projetos</a> <a href="#"
+                     atraentes que ganham vida usando transições
+                  </p>
+                  <a href="#projetos" class="botao" style="background-color: #20B787;">Ver Projetos /></a> <a href="#"
                      class="botao">Visualizar CV</a>
                </div>
             </div>
@@ -93,8 +97,6 @@
       </div>
    </div>
    </div>
-
-
 
 
    <div class="mouse-anima d-block">
@@ -124,28 +126,31 @@
                <p>
                   Sou Thiago Honorato, me formei em Design Gráfico em 2018, mas desde antes da faculdade
                   já me interessava em atuar na area de tecnologia e criação. Durante a minha carreira
-                  trabalhei em agencias, e-commerces e grafica,
-                  Sou Thiago Honorato, me formei em Design Gráfico em 2018, mas desde antes da faculdade
-                  já me interessava em atuar na area de tecnologia e criação. Durante a minha carreira
-                  trabalhei em agencias, e-commerces e grafica,
+                  tive a oportunidade de trabalhar para agencias, e-commerces e grafica
+               </p>
+               <p>
+                  Atualmente sou designer freelancer trabalhando com desenvolvimento 
+                  <span class="color-about">front-end</span>, <span class="color-about">branding</span>, 
+                  <span class="color-about">design de interfaces</span> e<span class="color-about"> web design</span>. No
+                  momento estou procurando trabalhar mais com design de interfaces e UX.
                </p>
                <div class="row">
                   <div class="col-6">
                      <ul class="skill-bars">
                         <li>
-                           <div class="progress percent90"><span>90%</span></div>
+                           <div class="progress percent90"></div>
                            <strong>HTML5 - 90%</strong>
                         </li>
                         <li>
-                           <div class="progress percent85"><span></span></div>
+                           <div class="progress percent85"></div>
                            <strong>CSS SASS - 85%</strong>
                         </li>
                         <li>
-                           <div class="progress percent70"><span></span></div>
+                           <div class="progress percent70"></div>
                            <strong>Javascript JQuery - 70%</strong>
                         </li>
                         <li>
-                           <div class="progress percent75"><span></span></div>
+                           <div class="progress percent75"></div>
                            <strong>Wordpress - 75%</strong>
                         </li>
                      </ul>
@@ -153,34 +158,36 @@
                   <div class="col-6">
                      <ul class="skill-bars">
                         <li>
-                           <div class="progress percent90"><span>90%</span></div>
+                           <div class="progress percent90"></div>
                            <strong>Adobe XD - 90%</strong>
                         </li>
                         <li>
-                           <div class="progress percent85"><span>85%</span></div>
+                           <div class="progress percent85"></div>
                            <strong>Photoshop - 85%</strong>
                         </li>
                         <li>
-                           <div class="progress percent70"><span>70%</span></div>
+                           <div class="progress percent70"></div>
                            <strong>Illustrator - 70%</strong>
                         </li>
                         <li>
-                           <div class="progress percent75"><span>75%</span></div>
+                           <div class="progress percent75"></div>
                            <strong>Indesign - 75%</strong>
                         </li>
                      </ul>
                   </div>
                </div>
 
-               <p>
-                  Sou Thiago Honorato, me formei em Design Gráfico em 2018, mas desde antes da faculdade
-                  já me interessava em atuar na area de tecnologia e criação.
+               <p class="mt-4">
+                  #html/css &nbsp #javascript &nbsp #adobeCC &nbsp #ui &nbsp #ux &nbsp #digitaldesign &nbsp
+                  #graphicdesign &nbsp #development
                </p>
 
 
             </div>
             <div class="col-md-5 align-self-center text-center">
-               <img src="https://via.placeholder.com/400x450" class="img-fluid">
+               <div class="imagem">
+                  <img src="https://via.placeholder.com/400x450" class="imagem-sobre img-fluid">
+               </div>
                <div class="socials">
                   <i class="fab fa-codepen"></i>
                   <i class="fab fa-behance-square"></i>
@@ -192,7 +199,8 @@
    </section>
    <section id="oquefaco">
       <div class="container">
-         <div class="row flex-row-reverse">  <!--flex-xl-row-reverse-->
+         <div class="row flex-row-reverse">
+            <!--flex-xl-row-reverse-->
             <div class="col-md-5">
                <span class="subtitle">Conheça um pouco do meu trabalho...</span>
                <h2>O que faço</h2>
@@ -205,7 +213,8 @@
                   <div class="descri-txt">
                      <h4 class="descri-titulo">Desenvolvimento Web</h4>
                      Criação de sites modernos aplicando técnicas de UX, criação de protótipos navegáveis, criação de
-                     layouts e programação front-end. </div>
+                     layouts e programação front-end.
+                  </div>
                </div>
                <div class="descricao">
                   <div class="descri-icon">
@@ -213,10 +222,12 @@
                         <img src="assets/img/digital.svg" width="50px" style="margin-left:-10px">
                      </picture>
                   </div>
-                  
+
                   <div class="descri-txt">
                      <h4 class="descri-titulo">Digital</h4>
-                     Desenvolvimento de sites modernos aplicando técnicas de UX, criação de layouts, protótipos navegáveis e programação front-end. </div>
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione deserunt magnam beatae rerum aliquam 
+                     aliquid 
+                  </div>
                </div>
                <div class="descricao">
                   <div class="descri-icon">
@@ -226,123 +237,159 @@
                   </div>
                   <div class="descri-txt">
                      <h4 class="descri-titulo">Impressos</h4>
-                     Criação de todo tipo de material. Cartão de visita, folheto, folder, embalagem, estampa, projeto gráfico de livro e revista etc.</div>
+                     Criação de todo tipo de material. Cartão de visita, folheto, folder, embalagem, estampa, projeto
+                     gráfico de livro e revista etc.
+                  </div>
                </div>
             </div>
             <div class="col-md-6">
-               <img src="https://via.placeholder.com/500x400">
+               <img src="https://via.placeholder.com/500x400" class="img-fluid">
             </div>
          </div>
       </div>
-
+   <div id="projetos"></div>
    </section>
 
    <!-- Works Section -->
-   <section id="portfolio">
-   <div id="work" class="bg-light">
-      <div class="container">
-         <div class="row">
-            <div class="col-12">
-               <span class="subtitle">veja alguns trabalhos já realizados...</span>
-               <h2>Portfólio</h2>
-            </div>
-            <div class="col-lg-12 px-25">
-               <ul class="work-filter">
-                  <li class="filter all active" data-filter="*">Todos</li>
-                  <li class="filter" data-filter=".branding">Web</li>
-                  <li class="filter" data-filter=".web">Redes Sociais</li>
-                  <li class="filter" data-filter=".mobile">Impressos</li>
-               </ul>
-            </div>
-            <div class="col-lg-12">
-               <div class="work-gallery" style="position: relative; height: 526.344px;">
-                  <div class="col-lg-4 col-md-6 col-sm-12 all photo mobile"
-                     style="position: absolute; left: 0px; top: 0px;">
-                     <div class="work">
-                        <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
-                        <div class="desc">
-                           <div class="con">
-                              <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 1</a>
-                              </h3>
-                              <span>Branding, Photography</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 all web"
-                     style="position: absolute; left: 379.984px; top: 0px;">
-                     <div class="work">
-                        <img class="img-fluid" src="./assets/img/work-7.jpg" alt="">
-                        <div class="desc">
-                           <div class="con">
-                              <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 2</a>
-                              </h3>
-                              <span>Mobile, Web, Branding</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 all branding web"
-                     style="position: absolute; left: 759.968px; top: 0px;">
-                     <div class="work">
-                        <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
-                        <div class="desc">
-                           <div class="con">
-                              <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 3</a>
-                              </h3>
-                              <span>Mobile, Web</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 all web branding"
-                     style="position: absolute; left: 0px; top: 263.172px;">
-                     <div class="work">
-                        <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
-                        <div class="desc">
-                           <div class="con">
-                              <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 4</a>
-                              </h3>
-                              <span>Web, Branding</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 all mobile"
-                     style="position: absolute; left: 379.984px; top: 263.172px;">
-                     <div class="work">
-                        <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
-                        <div class="desc">
-                           <div class="con">
-                              <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 5</a>
-                              </h3>
-                              <span>Mobile, Photography</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 all branding"
-                     style="position: absolute; left: 759.968px; top: 263.172px;">
-                     <div class="work">
-                        <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
-                        <div class="desc">
-                           <div class="con">
-                              <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 6</a>
-                              </h3>
-                              <span>Web, Branding</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+   <section id="portfolio" class="gallery">
+      <div class="rw">
+			<ul>
+				<a href="#" class="close"></a>
+			</ul>
+		</div> <!-- / row -->
+	
+		<!-- Item 01 -->
+		<div id="item01" class="port">
+		
+			<div class="rw">
+				<div class="description">
+					<h1>Item 01</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+				</div>
+	
+					<img src="https://via.placeholder.com/580x440" alt="">
+				</div>
+			</div> <!-- / row -->
+	
+		 <!-- / Item 02 -->
+	
+		<!-- Item 02 -->
+		<div id="item02" class="port">
+		
+			<div class="rw">
+				<div class="description">
+					<h1>Item 02</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+				</div>
+				<img src="https://via.placeholder.com/580x440" alt="">
+			</div> <!-- / row -->
+	
+		</div> <!-- / Item 02 -->
+      <div id="work" class="bg-light">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <span class="subtitle">Confira alguns projetos...</span>
+                  <h2>Portfólio</h2>
                </div>
-               <div class="col-12 text-center">
-                  <a href="#" class="botao" style="background-color: #20B787;">Ver Projetos</a>
+               <div class="col-lg-12 px-25">
+                  <ul class="work-filter">
+                     <div id="marker"></div>
+                     <li class="filter all active" data-filter="*">Todos</li>
+                     <li class="filter" data-filter=".branding">Digital</li>
+                     <li class="filter" data-filter=".web">Web</li>
+                     <li class="filter" data-filter=".mobile">Impressos</li>
+                  </ul>
+               </div>
+               <div class="col-lg-12">
+                  <div class="work-gallery" style="position: relative; height: 526.344px;">
+                     <div class="col-lg-4 col-md-6 col-sm-12 all photo mobile"
+                        style="position: absolute; left: 0px; top: 0px;">
+                        <div class="work">
+                              <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                           <div class="desc">
+                              <div class="con">
+                                 <h3><a href="#item01">Work 1</a>
+                                 </h3>
+                                 <span>Branding, Photography</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 all web"
+                        style="position: absolute; left: 379.984px; top: 0px;">
+                        <div class="work">
+                           <img class="img-fluid" src="./assets/img/work-7.jpg" alt="">
+                           <div class="desc">
+                              <div class="con">
+                                 <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 2</a>
+                                 </h3>
+                                 <span>Mobile, Web, Branding</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 all branding web"
+                        style="position: absolute; left: 759.968px; top: 0px;">
+                        <div class="work">
+                           <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                           <div class="desc">
+                              <div class="con">
+                                 <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 3</a>
+                                 </h3>
+                                 <span>Mobile, Web</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 all web branding"
+                        style="position: absolute; left: 0px; top: 263.172px;">
+                        <div class="work">
+                           <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                           <div class="desc">
+                              <div class="con">
+                                 <h3><a href="#item02">Work 4</a>
+                                 </h3>
+                                 <span>Web, Branding</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 all mobile"
+                        style="position: absolute; left: 379.984px; top: 263.172px;">
+                        <div class="work">
+                           <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                           <div class="desc">
+                              <div class="con">
+                                 <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 5</a>
+                                 </h3>
+                                 <span>Mobile, Photography</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 all branding"
+                        style="position: absolute; left: 759.968px; top: 263.172px;">
+                        <div class="work">
+                           <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                           <div class="desc">
+                              <div class="con">
+                                 <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 6</a>
+                                 </h3>
+                                 <span>Web, Branding</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 text-center">
+                     <a href="#" class="botao" style="background-color: #20B787;">Ver Projetos /></a>
+                  </div>
                </div>
             </div>
          </div>
       </div>
-   </div> 
-</section>
+   </section>
    <footer class="footer" id="rodape">
       <div class="container">
          <div class="row">
@@ -353,26 +400,28 @@
             <div class="col-md-5">
                <form>
                   <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input class="form-control form-control-sm" type="text" id="nome">
+                     <label for="nome">Nome</label>
+                     <input class="form-control form-control-sm" type="text" id="nome">
                   </div>
                   <div class="form-group">
                      <label for="email">E-mail</label>
                      <input class="form-control form-control-sm" type="text" id="email">
-                   </div>
-                   <div class="form-group">
+                  </div>
+                  <div class="form-group">
                      <label for="textarea">Mensagem</label>
                      <textarea class="form-control" id="textarea" rows="3"></textarea>
-                   </div>
-                   <button type="submit" class="btn btn-primary mb-5">Enivar</button>
-                </form>
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-5">Enivar /></button>
+               </form>
             </div>
             <div class="col-md-7">
-                  <h4>Let's connect</h4>
-                  <p>Telefone / E-mail / WhatsApp</p>
+               <h4>Let's connect</h4>
+               <i class="far fa-envelope"></i>
+               <i class="fab fa-linkedin-in"></i>
+               <i class="fab fa-whatsapp"></i>
             </div>
-            <div class="col-md-5">
-                  © 2020 Thiago Honorato | Design & Code
+            <div class="col-md-5 mt-4">
+               © 2020 Thiago Honorato | Design & Code
             </div>
 
          </div>
@@ -380,8 +429,38 @@
    </footer>
    <!-- End Works Section -->
 
-   <!-- jQuery -->
 
+
+   <!-- jQuery -->
+   <script>
+      var marker = document.querySelector("#marker");
+      var item = document.querySelectorAll(".work-filter .filter");
+
+
+      function indicator(e) {
+         marker.style.left = e.offsetLeft + "px";
+         marker.style.width = e.offsetWidth + "px";
+      }
+
+      item.forEach(link => {
+         link.addEventListener('click', (e) => {
+            indicator(e.target);
+         });
+      });
+
+
+
+      // var navbar = document.getElementById("navbar");
+      // var sticky = navbar.offsetTop;
+
+      // function myFunction() {
+      //    if (window.pageYOffset >= sticky) {
+      //        navbar.classList.add("sticky")
+      //    } else {
+      //       navbar.classList.remove("sticky");
+      //    }
+      // }
+   </script>
    <script src="./assets/js/jquery.min.js.download"></script>
    <script src="./assets/js/isotope.pkgd.min.js.download"></script>
    <script src="./assets/js/imagesloaded.pkgd.min.js.download"></script>
@@ -392,6 +471,7 @@
    <script type="text/javascript" src="assets/js/jquery-3.5.1.slim.min.js"></script>
    <script type="text/javascript" src="assets/js/popper.min.js"></script>
    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+   <script type="text/javascript" src="assets/js/teste.js"></script>
 
    <!-- 
    <form action="https://formspree.io/xnqbkklr" method="POST">
