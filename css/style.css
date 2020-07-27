@@ -861,31 +861,13 @@ header p {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
-  .botao {
-    width: 100%;
-  }
-  .descricao{
-    display: block;
-  }
-  .descricao .descri-txt{
-    margin-left: 10px;
-  }
-  /* picture{
-    margin-left: 10px;
-  } */
-  .txt {
-    margin-bottom: 0px;
-  }
-}
-
-
 
 .barr {
   position: relative;
   cursor: pointer;
   width: 30px;
   height: 25px;
+  display: none;
 }
 .barr > .one, .barr > .two, .barr > .three {
   position: absolute;
@@ -920,4 +902,28 @@ header p {
 .barr.fechar > .three {
   -webkit-transform: rotate(-45deg) translate(7px, -7px);
           transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media screen and (max-width: 768px) {
+  .chamada h1{
+    font-size: 14px;
+  }
+  .barr{
+    display: block;
+  }
+  .botao {
+    width: 100%;
+  }
+  .descricao{
+    display: block;
+  }
+  .descricao .descri-txt{
+    margin-left: 10px;
+  }
+  /* picture{
+    margin-left: 10px;
+  } */
+  .txt {
+    margin-bottom: 0px;
+  }
 }
