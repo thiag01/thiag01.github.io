@@ -21,8 +21,8 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./assets/css/bootstrap.css">
+   <link rel="stylesheet" href="./assets/css/mystyle.css">
 </head>
 
 <body>
@@ -38,14 +38,28 @@
                </a>
 
                <!-- menu -->
-               <div id="nav-icon3" class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse"
+               <!-- <div id="nav-icon3" class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse"
                   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                   aria-label="Toggle navigation">
                   <span></span>
                   <span></span>
                   <span></span>
                   <span></span>
-               </div>
+               </div> 
+
+               <div id='menu-hamburguer' class='barr' onclick='openMenu()'>
+                  <div class='one'></div>
+                  <div class='two'></div>
+                  <div class='three'></div>
+                </div> -->
+
+                <div id='menu-hamburguer' class='barr collapsed'  type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" onclick='openMenu()'>
+                  <div class='one'></div>
+                  <div class='two'></div>
+                  <div class='three'></div>
+                </div>
 
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -77,7 +91,7 @@
                sou Web Designer e Desenvolvedor Front-End.</p>
             <div class="row">
                <div class="col-md-7">
-                  <h1>Developer Web Developer Web </h1>
+                  <h1>Web Developer Web Developer Web </h1>
                   <!-- TypeWriter -->
                   <h1 href="#" class="typewrite" data-period="2000"
                      data-type="[ &quot;Designer  &quot;, &quot;Front-End &quot;, &quot;Freelancer &quot; ]"><span
@@ -103,6 +117,7 @@
       <div class="container">
 
          <div class="row">
+            <span class="subtitle" style="text-align: center;">Role para ver mais</span>
             <div class="scroll-icon">
                <a href="#info" class="smoothscroll">
                   <div class="mouse"></div>
@@ -207,7 +222,7 @@
                <div class="descricao">
                   <div class="descri-icon">
                      <picture>
-                        <img src="img/web 1.svg">
+                        <img src="assets/img/web 1.svg">
                      </picture>
                   </div>
                   <div class="descri-txt">
@@ -219,7 +234,7 @@
                <div class="descricao">
                   <div class="descri-icon">
                      <picture>
-                        <img src="img/digital.svg" width="50px" style="margin-left:-10px">
+                        <img src="assets/img/digital.svg" class="digital-svg" width="50px">
                      </picture>
                   </div>
 
@@ -232,7 +247,7 @@
                <div class="descricao">
                   <div class="descri-icon">
                      <picture>
-                        <img src="img/color-palette 1.svg">
+                        <img src="assets/img/color-palette 1.svg">
                      </picture>
                   </div>
                   <div class="descri-txt">
@@ -263,15 +278,15 @@
 		
 			<div class="rw">
 				<div class="description">
-					<h1>Item 01</h1>
+               <h1>Item 01</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
 				</div>
-	
 					<img src="https://via.placeholder.com/580x440" alt="">
 				</div>
 			</div> <!-- / row -->
 	
-		 <!-- / Item 02 -->
+		 <!-- / Item 01 -->
 	
 		<!-- Item 02 -->
 		<div id="item02" class="port">
@@ -283,8 +298,71 @@
 				</div>
 				<img src="https://via.placeholder.com/580x440" alt="">
 			</div> <!-- / row -->
+      </div> <!-- / Item 02 -->
+
+      		<!-- Item 03 -->
+		<div id="item03" class="port">
+		
+			<div class="rw">
+				<div class="description">
+               <h1>Item 03</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+				</div>
+					<img src="https://via.placeholder.com/580x440" alt="">
+				</div>
+			</div> <!-- / row -->
 	
-		</div> <!-- / Item 02 -->
+       <!-- / Item 03 -->
+       
+       		<!-- Item 04 -->
+		<div id="item04" class="port">
+		
+			<div class="rw">
+				<div class="description">
+               <h1>Item 04</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+				</div>
+					<img src="https://via.placeholder.com/580x440" alt="">
+				</div>
+			</div> <!-- / row -->
+	
+       <!-- / Item 04 -->
+       
+       		<!-- Item 05 -->
+		<div id="item05" class="port">
+		
+			<div class="rw">
+				<div class="description">
+               <h1>Item 05</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+				</div>
+					<img src="https://via.placeholder.com/580x440" alt="">
+				</div>
+			</div> <!-- / row -->
+	
+       <!-- / Item 05 -->
+
+       
+       <!-- Item 06 -->
+		<div id="item06" class="port">
+		
+			<div class="rw">
+				<div class="description">
+               <h1>Item 06</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+				</div>
+					<img src="https://via.placeholder.com/580x440" alt="">
+				</div>
+			</div> <!-- / row -->
+	
+		 <!-- / Item 06 -->
+
+      
+
       <div id="work" class="bg-light">
          <div class="container">
             <div class="row">
@@ -309,7 +387,8 @@
                               <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
                            <div class="desc">
                               <div class="con">
-                                 <h3><a href="#item01">Work 1</a>
+                                 <h3>
+                                    <a href="#item01">Work 1</a>
                                  </h3>
                                  <span>Branding, Photography</span>
                               </div>
@@ -322,7 +401,8 @@
                            <img class="img-fluid" src="./assets/img/work-7.jpg" alt="">
                            <div class="desc">
                               <div class="con">
-                                 <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 2</a>
+                                 <h3>
+                                    <a href="#item02">Work 2</a>
                                  </h3>
                                  <span>Mobile, Web, Branding</span>
                               </div>
@@ -335,7 +415,8 @@
                            <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
                            <div class="desc">
                               <div class="con">
-                                 <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 3</a>
+                                 <h3>
+                                    <a href="#item03">Work 3</a>
                                  </h3>
                                  <span>Mobile, Web</span>
                               </div>
@@ -348,7 +429,8 @@
                            <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
                            <div class="desc">
                               <div class="con">
-                                 <h3><a href="#item02">Work 4</a>
+                                 <h3>
+                                    <a href="#item04">Work 4</a>
                                  </h3>
                                  <span>Web, Branding</span>
                               </div>
@@ -361,7 +443,8 @@
                            <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
                            <div class="desc">
                               <div class="con">
-                                 <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 5</a>
+                                 <h3>
+                                    <a href="#item05">Work 5</a>
                                  </h3>
                                  <span>Mobile, Photography</span>
                               </div>
@@ -374,7 +457,8 @@
                            <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
                            <div class="desc">
                               <div class="con">
-                                 <h3><a href="http://pavloffstudio.com/gwyn/gwyn/demo/dark/work-single.html">Work 6</a>
+                                 <h3>
+                                    <a href="#item06">Work 6</a>
                                  </h3>
                                  <span>Web, Branding</span>
                               </div>
@@ -466,11 +550,13 @@
    <script src="./assets/js/imagesloaded.pkgd.min.js.download"></script>
    <script src="./assets/js/custom.js.download"></script>
    <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
-   <script type="text/javascript" src="js/autotyper.js"></script>
+   <script type="text/javascript" src="assets/js/autotyper.js"></script>
    <script type="text/javascript" src="assets/js/jquery-3.5.1.slim.min.js"></script>
    <script type="text/javascript" src="assets/js/popper.min.js"></script>
    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
    <script type="text/javascript" src="assets/js/teste.js"></script>
+   <script type="text/javascript" src="assets/js/gallery.js"></script>
+   <script type="text/javascript" src="assets/js/menu-responsive.js"></script>
 
    <!-- 
    <form action="https://formspree.io/xnqbkklr" method="POST">
