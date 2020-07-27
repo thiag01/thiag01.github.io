@@ -1,4 +1,4 @@
-@import "bluish.css";
+
 :root{
   --primary-color: #24262B;
   --secondary-color: #20B787;
@@ -906,7 +906,7 @@ header p {
 
 @media screen and (max-width: 768px) {
   .chamada h1{
-    font-size: 14px;
+    font-size: 40px;
   }
   .barr{
     display: block;
@@ -926,4 +926,4 @@ header p {
   .txt {
     margin-bottom: 0px;
   }
-}
+}s
