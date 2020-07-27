@@ -143,7 +143,7 @@ nav{
   padding-bottom: 70px;
 }
 #portfolio{
-  /* padding: var(--padding-section); */
+  padding: var(--padding-section);
   background: #f8f9fa;
   position: relative;
   overflow: hidden;
@@ -730,7 +730,7 @@ header p {
 }
 
 .gallery {
-  padding: 40px 0 300px;
+  /* padding: 40px 0 300px; */
   position: relative;
   overflow: hidden;
 }
@@ -871,7 +871,53 @@ header p {
   .descricao .descri-txt{
     margin-left: 10px;
   }
-  picture{
+  /* picture{
     margin-left: 10px;
+  } */
+  .txt {
+    margin-bottom: 0px;
   }
+}
+
+
+
+.barr {
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+}
+.barr > .one, .barr > .two, .barr > .three {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  content: "";
+  background-color: var(--secondary-color);
+  -webkit-transition: opacity 0.2s ease, visibility 0.2s ease, background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease, background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.3s ease, background-color 0.3s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.3s ease, background-color 0.3s ease, -webkit-transform 0.3s ease;
+}
+.barr > .two {
+  top: 10px;
+  visibility: visible;
+  opacity: 1;
+}
+.barr > .three {
+  top: 20px;
+}
+.barr.fechar > .one, .barr.fechar > .two, .barr.fechar > .three {
+  background-color: #fff;
+}
+.barr.fechar > .one {
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+          transform: rotate(45deg) translate(7px, 7px);
+}
+.barr.fechar > .two {
+  visibility: hidden;
+  opacity: 0;
+}
+.barr.fechar > .three {
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
+          transform: rotate(-45deg) translate(7px, -7px);
 }
