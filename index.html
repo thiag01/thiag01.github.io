@@ -21,8 +21,8 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./assets/css/bootstrap.css">
+   <link rel="stylesheet" href="./assets/css/mystyle.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
 
             <nav class="navbar navbar-expand-md">
                <a class="navbar-brand" href="index.html">
-                  <img src="img/logo_thiago.png">
+                  <img src="assets/img/logoth.svg" width="160px">
                </a>
 
                <!-- menu -->
@@ -71,10 +71,10 @@
                         <a class="nav-link" href="#oquefaco">O que faço<span class="sr-only">(current)</span></a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Portfólio</a>
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#rodape"><span>Contato</span></a>
+                        <a class="nav-link" href="#contato"><span>Contato</span></a>
                      </li>
                   </ul>
 
@@ -98,9 +98,8 @@
                         class="wrap">Designer</span></h1>
                </div>
                <div class="col-md-5">
-                  <p class="txt mt-3"> Fascinado por inovação e interatividade, busco sempre desenvolver projetos
-                     atraentes que ganham vida usando transições e animações que atendem aos meus clientes,
-                     atraentes que ganham vida usando transições
+                  <p class="txt mt-3"> 
+                     Muitas vezes a comunicação é realizada por diversos meios: impresso, digital e web. É importante contar com um profissional que entenda de tudo isso.
                   </p>
                   <a href="#projetos" class="botao" style="background-color: #20B787;">Ver Projetos /></a> <a href="#"
                      class="botao">Visualizar CV</a>
@@ -121,14 +120,11 @@
                <a href="#info" class="smoothscroll">
                   <div class="mouse"></div>
                </a>
-               <div class="end-top"></div>
             </div>
          </div>
       </div>
    </div>
-
-
-
+   
    <section id="sobre-mim">
       <div class="container">
          <div class="row">
@@ -161,7 +157,7 @@
                         </li>
                         <li>
                            <div class="progress percent70"></div>
-                           <strong>Javascript JQuery - 70%</strong>
+                           <strong>Javascript - 70%</strong>
                         </li>
                         <li>
                            <div class="progress percent75"></div>
@@ -193,18 +189,14 @@
 
                <p class="mt-4">
                   #html/css &nbsp #javascript &nbsp #adobeCC &nbsp #ui &nbsp #ux &nbsp #digitaldesign &nbsp
-                  #graphicdesign &nbsp #development
+                  #development
                </p>
 
 
             </div>
             <div class="col-md-5 align-self-center text-center">
                <div class="imagem">
-                  <img src="https://via.placeholder.com/400x450" class="imagem-sobre img-fluid">
-               </div>
-               <div class="socials">
-                  <i class="fab fa-codepen"></i>
-                  <i class="fab fa-behance-square"></i>
+                  <img src="assets/img/vianapatricio.png" class="imagem-sobre img-fluid">
                </div>
             </div>
 
@@ -228,6 +220,7 @@
                      <h4 class="descri-titulo">Desenvolvimento Web</h4>
                      Criação de sites modernos aplicando técnicas de UX, criação de protótipos navegáveis, criação de
                      layouts e programação front-end.
+                     
                   </div>
                </div>
                <div class="descricao">
@@ -258,7 +251,7 @@
             </div>
             <div class="col-md-7">
                <!-- <img src="https://via.placeholder.com/500x400" class="img-fluid laptop"> -->
-               <img src="img/teste2.png" class="img-fluid laptop">
+               <img src="assets/img/teste2.png" class="img-fluid laptop">
             </div>
          </div>
       </div>
@@ -280,7 +273,6 @@
 				<div class="description">
                <h1>Item 01</h1>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
 				</div>
 					<img src="https://via.placeholder.com/580x440" alt="">
 				</div>
@@ -307,7 +299,6 @@
 				<div class="description">
                <h1>Item 03</h1>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
 				</div>
 					<img src="https://via.placeholder.com/580x440" alt="">
 				</div>
@@ -474,7 +465,7 @@
          </div>
       </div>
    </section>
-   <footer class="footer" id="rodape">
+   <footer class="footer" id="contato">
       <div class="container">
          <div class="row">
             <div class="col-md-7">
@@ -482,20 +473,23 @@
                <h2> Entre em Contato</h2>
             </div>
             <div class="col-md-5">
-               <form>
+               <form action="https://formspree.io/xnqbkklr" method="POST">
                   <div class="form-group">
                      <label for="nome">Nome</label>
-                     <input class="form-control form-control-sm" type="text" id="nome">
+                     <input class="form-control form-control-sm" type="text" name="name" id="nome"  required>
                   </div>
                   <div class="form-group">
                      <label for="email">E-mail</label>
-                     <input class="form-control form-control-sm" type="text" id="email">
+                     <input class="form-control form-control-sm" type="email" name="_replyto" id="email" required>
                   </div>
                   <div class="form-group">
-                     <label for="textarea">Mensagem</label>
-                     <textarea class="form-control" id="textarea" rows="3"></textarea>
+                     <label for="textarea">
+                        Message:
+                     </label>
+                        <textarea class="form-control" id="textarea" rows="3" name="message"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary mb-5">Enivar /></button>
+                  <!-- <button type="submit" class="btn btn-primary mb-5">Enivar /></button> -->
+                  <input type="submit" class="btn btn-primary mb-5" value="Enivar">
                </form>
             </div>
             <div class="col-md-7">
@@ -507,10 +501,16 @@
             <div class="col-md-5 mt-4">
                © 2020 Thiago Honorato | Design & Code
             </div>
-
+   <!-- 
+   <form action="https://formspree.io/xnqbkklr" method="POST">
+      <input type="text" name="name">
+      <input type="email" name="_replyto">
+      <input type="submit" value="Send">
+   </form>
+   -->
          </div>
       </div>
-   </footer>
+   </footer> 
    <!-- End Works Section -->
 
 
@@ -545,26 +545,19 @@
       //    }
       // }
    </script>
-   <script src="js/jquery.min.js.download"></script>
-   <script src="js/isotope.pkgd.min.js.download"></script>
-   <script src="js/imagesloaded.pkgd.min.js.download"></script>
-   <script src="js/custom.js.download"></script>
-   <script src="js/jquery-3.5.1.slim.min.js"></script>
-   <script type="text/javascript" src="js/autotyper.js"></script>
-   <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
-   <script type="text/javascript" src="js/popper.min.js"></script>
-   <script type="text/javascript" src="js/bootstrap.js"></script>
-   <script type="text/javascript" src="js/teste.js"></script>
-   <script type="text/javascript" src="js/gallery.js"></script>
-   <script type="text/javascript" src="js/menu-responsive.js"></script>
+   <script src="./assets/js/jquery.min.js.download"></script>
+   <script src="./assets/js/isotope.pkgd.min.js.download"></script>
+   <script src="./assets/js/imagesloaded.pkgd.min.js.download"></script>
+   <script src="./assets/js/custom.js.download"></script>
+   <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+   <script type="text/javascript" src="assets/js/autotyper.js"></script>
+   <script type="text/javascript" src="assets/js/jquery-3.5.1.slim.min.js"></script>
+   <script type="text/javascript" src="assets/js/popper.min.js"></script>
+   <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+   <script type="text/javascript" src="assets/js/teste.js"></script>
+   <script type="text/javascript" src="assets/js/gallery.js"></script>
+   <script type="text/javascript" src="assets/js/menu-responsive.js"></script>
 
-   <!-- 
-   <form action="https://formspree.io/xnqbkklr" method="POST">
-      <input type="text" name="name">
-      <input type="email" name="_replyto">
-      <input type="submit" value="Send">
-   </form>
--->
 
 </body>
 
