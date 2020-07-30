@@ -923,7 +923,8 @@ form .btn{
     font-size: 40px;
   }
   .imagem-sobre{
-   width: 100%;
+   width: 110%;
+   margin-left: -25px;
   }
   .port .description p, .port img {
     width: 90%;
