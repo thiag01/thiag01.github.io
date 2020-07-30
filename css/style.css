@@ -142,6 +142,7 @@ nav{
 .chamada h1{
   font-weight: 900;
 }
+
 #sobre-mim, #oquefaco{
   padding: var(--padding-section);
   background-color: #24262b;
@@ -909,6 +910,10 @@ header p {
 .laptop{
   margin-top: 120px;
 }
+form .btn{
+  background-color: var(--secondary-color);
+  box-shadow: 0px 0px 47px -2px rgba(32, 183, 141, 0.32);
+}
 @media screen and (max-width: 768px) {
   #navegacao {
     width: 100%;
@@ -917,7 +922,9 @@ header p {
   .chamada h1{
     font-size: 40px;
   }
-  
+  .imagem-sobre{
+   width: 100%;
+  }
   .port .description p, .port img {
     width: 90%;
     display: block;
@@ -946,7 +953,3 @@ header p {
   }
 }
 
-form .btn{
-  background-color: var(--secondary-color);
-  box-shadow: 0px 0px 47px -2px rgba(32, 183, 141, 0.32);
-}
