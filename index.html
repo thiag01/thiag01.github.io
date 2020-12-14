@@ -1,196 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <!--Meta Tags-->
-
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="">
-   <meta name="keywords" content="">
-   <meta name="author" content="">
-   <meta name="theme-color" content="#24262b">
-   <meta name="apple-mobile-web-app-status-bar-style" content="#24262b">
-   <!--Favicons-->
-   <link rel="shortcut icon" href="https://thiag01.github.io/">
-   <!--Page Title-->
-   <title>Thiago Honorato</title>
-
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-   <!-- Bootstrap  -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-   <div id="navegacao">
-      <div id="barra_menu" class="fixed-top">
-
-         <div class="container">
-
-            <nav class="navbar navbar-expand-md">
-               <a class="navbar-brand" href="index.html">
-                  <img src="img/logoth.svg" width="160px">
-               </a>
-
-               <!-- menu -->
-               <!-- <div id="nav-icon3" class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse"
-                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-               </div> 
-
-               <div id='menu-hamburguer' class='barr' onclick='openMenu()'>
-                  <div class='one'></div>
-                  <div class='two'></div>
-                  <div class='three'></div>
-                </div> -->
-
-                <div id='menu-hamburguer' class='barr collapsed'  type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" onclick='openMenu()'>
-                  <div class='one'></div>
-                  <div class='two'></div>
-                  <div class='three'></div>
-                </div>
-
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Quem sou</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#oquefaco">O que faço<span class="sr-only">(current)</span></a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfólio</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#contato"><span>Contato</span></a>
-                     </li>
-                  </ul>
-
-               </div>
-            </nav>
-
-         </div>
-      </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Thiago Honorato - Developer & Designer</title>
+    <meta name="author" content="Adtile">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+    <script src="js/responsive-nav.js"></script>
+  </head>
+  <body>
+   <div class='cursor big-circle'></div>
+    <header>
       <div class="container">
-
-         <div class="chamada d-flex flex-column justify-content-center">
-
-            <p class="mb-2"> Olá, meu nome é <span style="color:#20B787">Thiago</span>,
-               sou Web Designer e Desenvolvedor Front-End.</p>
-            <div class="row">
-               <div class="col-md-7">
-                  <h1 class="mt-3">Web Developer fascinado por</h1>
-                  <!-- TypeWriter -->
-                  <h1 href="#" class="typewrite" data-period="2000"
-                     data-type="[ &quot;desenvolver  &quot;, &quot;interação &quot;, &quot;criação&quot; ]"><span
-                        class="wrap">Designer</span></h1>
-               </div>
-               <div class="col-md-5">
-                  <p class="txt mt-3"> 
-                     Muitas vezes a comunicação é realizada por diversos meios: impresso, digital e web. É importante contar com um profissional que entenda de tudo isso.
-                  </p>
-                  <a href="#projetos" class="botao" style="background-color: #20B787;">Ver Projetos /></a> <a href="#"
-                     class="botao">Visualizar CV</a>
-               </div>
-            </div>
-
-         </div>
+      
+        <a href="#home" class="logo" data-scroll>
+          <img src="img/logoth.svg" width="160px">
+        </a>
+        <nav class="nav-collapse">
+          <ul>
+            <li class="menu-item"><a href="#slider" data-scroll></a></li>
+            <li class="menu-item"><a href="#home" data-scroll>Quem sou</a></li>
+            <li class="menu-item"><a href="#about" data-scroll>O que faço</a></li>
+            <li class="menu-item"><a href="#projects" data-scroll>Portfolio</a></li>
+            <li class="menu-item"><a href="#blog" data-scroll>Contato</a></li>
+          </ul>
+        </nav>
       </div>
-   </div>
-   </div>
+    </header>
 
+    <section id="slider">
+      <div class="container">
+        <p> Olá, meu nome é <span style="color:#20B787">Thiago</span>, sou Web Designer e Desenvolvedor Front-End. </p>
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="mt-3">Web Developer Web Developer Web </h1>
+            <!-- TypeWriter -->
+            <h1 href="#" class="typewrite" data-period="2000" data-type="[ &quot;Designer  &quot;, &quot;Front-End &quot;, &quot;Freelancer &quot; ]"><span class="wrap"></span></h1>
+          </div>
+          <div class="col-md-5">
+            <p class="mt-4 js-scroll"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam dolor quas cumque recusandae quod eveniet?</p>
+            <a href="#" class="botao" style="background-color: #20B787;">Ver Projetos /> </a><a href="#" class="botao">Visualizar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   <div class="mouse-anima d-block" id="sobre">
+    <div class="mouse-anima d-block">
       <div class="container">
 
          <div class="row">
             <div class="scroll-icon">
-               <a href="#info" class="smoothscroll">
+               <a href="#" class="smoothscroll">
                   <div class="mouse"></div>
                </a>
             </div>
          </div>
       </div>
-   </div>
-   
-   <section id="sobre-mim">
-      <div class="container">
-         <div class="row">
+    </div>
+
+    <section id="home">
+       <div class="container">
+          <div class="row js-scroll">
             <div class="col-12">
                <span class="subtitle">Saiba mais sobre mim, um designer apaixonado pelo que faz...</span>
-               <h2>Quem sou</h2>
+               <h2 class="mb-4">Quem sou</h2>
             </div>
             <div class="col-md-7">
                <p>
-                  Sou Thiago Honorato, me formei em Design Gráfico em 2018, mas desde antes da faculdade
-                  já me interessava em atuar na area de tecnologia e criação. Durante a minha carreira
-                  tive a oportunidade de trabalhar para agencias, e-commerces e grafica
+                  Sou Thiago Honorato, me formei em Design Gráfico em 2018, mas desde antes da faculdade já me interessava em atuar na area de tecnologia e criação. Durante a minha carreira tive a oportunidade de trabalhar para e-commerces, grafica e agencias digitais locais, Durante esse tempo pude acumular aprendizado e toda experiência necessária para oferecer aos meus clientes atendimento unindo qualidade e agilidade. 
                </p>
+            </br>
                <p>
                   Atualmente sou designer freelancer trabalhando com desenvolvimento 
                   <span class="color-about">front-end</span>, <span class="color-about">branding</span>, 
                   <span class="color-about">design de interfaces</span> e<span class="color-about"> web design</span>. No
                   momento estou procurando trabalhar mais com design de interfaces e UX.
                </p>
+            </br>
                <div class="row">
                   <div class="col-6">
-                     <ul class="skill-bars">
-                        <li>
-                           <div class="progress percent90"></div>
-                           <strong>HTML5 - 90%</strong>
-                        </li>
-                        <li>
-                           <div class="progress percent85"></div>
-                           <strong>CSS SASS - 85%</strong>
-                        </li>
-                        <li>
-                           <div class="progress percent70"></div>
-                           <strong>Javascript - 70%</strong>
-                        </li>
-                        <li>
-                           <div class="progress percent75"></div>
-                           <strong>Wordpress - 75%</strong>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="col-6">
-                     <ul class="skill-bars">
-                        <li>
-                           <div class="progress percent90"></div>
-                           <strong>Adobe XD - 90%</strong>
-                        </li>
-                        <li>
-                           <div class="progress percent85"></div>
-                           <strong>Photoshop - 85%</strong>
-                        </li>
-                        <li>
-                           <div class="progress percent70"></div>
-                           <strong>Illustrator - 70%</strong>
-                        </li>
-                        <li>
-                           <div class="progress percent75"></div>
-                           <strong>Indesign - 75%</strong>
-                        </li>
-                     </ul>
+                    <img src="img/icons.png">
                   </div>
                </div>
 
-               <p class="mt-4">
-                  #html/css &nbsp #javascript &nbsp #adobeCC &nbsp #ui &nbsp #ux &nbsp #digitaldesign &nbsp
+               <p class="hashtags mt-4">
+                  #html/css &nbsp; #javascript &nbsp; #adobeCC &nbsp; #ui &nbsp; #ux &nbsp; #digitaldesign &nbsp;
                   #development
                </p>
 
@@ -198,367 +99,261 @@
             </div>
             <div class="col-md-5 align-self-center text-center">
                <div class="imagem">
-                  <img src="img/thiago-perfil.png" class="imagem-sobre">
+                  <img src="img/thiago-perfil.png" class="img-fluid imagem-sobre">
                </div>
+               <p class="hashtags-mbl mt-4">
+                  #html/css &nbsp; #javascript &nbsp; #adobeCC &nbsp; #ui &nbsp; #ux &nbsp; #digitaldesign &nbsp;
+                  #development
+               </p>
             </div>
+          </div>
+       </div>
+    </section>
 
-         </div>
-      </div>
-   </section>
-   <section id="oquefaco">
+    <section id="about">
       <div class="container">
-         <div class="row flex-row-reverse">
-            <!--flex-xl-row-reverse-->
-            <div class="col-md-5">
-               <span class="subtitle">Conheça um pouco do meu trabalho...</span>
-               <h2>O que faço</h2>
-               <div class="descricao">
-                  <div class="descri-icon">
-                     <picture>
-                        <img src="img/web 1.svg">
-                     </picture>
-                  </div>
-                  <div class="descri-txt">
-                     <h4 class="descri-titulo">Desenvolvimento Web</h4>
-                     Criação de sites modernos aplicando técnicas de UX, criação de protótipos navegáveis, criação de
-                     layouts e programação front-end.
-                     
-                  </div>
-               </div>
-               <div class="descricao">
-                  <div class="descri-icon">
-                     <picture>
-                        <img src="img/digital.svg" class="digital-svg" width="50px">
-                     </picture>
-                  </div>
+        <div class="row flex-row-reverse">
+          <!--flex-xl-row-reverse-->
+          <div class="col-md-5">
+             <span class="subtitle">Conheça um pouco do meu trabalho...</span>
+             <h2 class="mb-4">O que faço</h2>
+             <div class="descricao">
+                <div class="descri-icon">
+                   <picture>
+                      <img src="img/web 1.svg" width="50px">
+                   </picture>
+                </div>
+                <div class="descri-txt js-scroll">
+                   <h4 class="descri-titulo">Desenvolvimento Web</h4>
+                   Criação de sites modernos aplicando técnicas de UX, criação de protótipos navegáveis, criação de
+                   layouts e programação front-end.
+                </div>
+             </div>
+             <div class="descricao">
+                <div class="descri-icon">
+                   <picture>
+                      <img src="img/digital.svg" class="digital-svg" width="50px">
+                   </picture>
+                </div>
 
-                  <div class="descri-txt">
-                     <h4 class="descri-titulo">Digital</h4>
-			  Criação de banners interativos com html5, criação de email-marketing responsivo, e peças para redes sociais.
-                  </div>
-               </div>
-               <div class="descricao">
-                  <div class="descri-icon">
-                     <picture>
-                        <img src="img/color-palette 1.svg">
-                     </picture>
-                  </div>
-                  <div class="descri-txt">
-                     <h4 class="descri-titulo">Impressos</h4>
-                     Criação de todo tipo de material. Cartão de visita, folheto, folder, embalagem, estampa, projeto
-                     gráfico de livro e revista etc.
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-7">
-               <img src="img/teste2.png" class="img-fluid laptop">
-            </div>
-         </div>
+                <div class="descri-txt js-scroll">
+                   <h4 class="descri-titulo">Digital</h4>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione deserunt magnam beatae rerum aliquam 
+                   aliquid 
+                </div>
+             </div>
+             <div class="descricao">
+                <div class="descri-icon">
+                   <picture>
+                      <img src="img/color-palette 1.svg">
+                   </picture>
+                </div>
+                <div class="descri-txt js-scroll">
+                   <h4 class="descri-titulo">Impressos</h4>
+                   Criação de todo tipo de material. Cartão de visita, folheto, folder, embalagem, estampa, projeto
+                   gráfico de livro e revista etc.
+                </div>
+             </div>
+          </div>
+          <div class="col-md-7">
+             <div class="notebook">
+               <img class="js-scroll react-logo" src="img/react_logo.svg" width="100px">
+               <img class="js-scroll" src="img/teste2.svg">
+             </div>
+          </div>
+       </div>
       </div>
-   <div id="projetos"></div>
-   </section>
+    </section>
 
-   <!-- Works Section -->
-   <section id="portfolio" class="gallery">
-      <div class="rw">
-			<ul>
-				<a href="#" class="close"></a>
-			</ul>
-		</div> <!-- / row -->
-	
-		<!-- Item 01 -->
-		<div id="item01" class="port">
-		
-			<div class="rw">
-				<div class="description">
-               <h1>Item 01</h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-				</div>
-					<img src="https://via.placeholder.com/580x440" alt="">
-				</div>
-			</div> <!-- / row -->
-	
-		 <!-- / Item 01 -->
-	
-		<!-- Item 02 -->
-		<div id="item02" class="port">
-		
-			<div class="rw">
-				<div class="description">
-					<h1>Item 02</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-				</div>
-				<img src="https://via.placeholder.com/580x440" alt="">
-			</div> <!-- / row -->
-      </div> <!-- / Item 02 -->
 
-      		<!-- Item 03 -->
-		<div id="item03" class="port">
-		
-			<div class="rw">
-				<div class="description">
-               <h1>Item 03</h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-				</div>
-					<img src="https://via.placeholder.com/580x440" alt="">
-				</div>
-			</div> <!-- / row -->
-	
-       <!-- / Item 03 -->
-       
-       		<!-- Item 04 -->
-		<div id="item04" class="port">
-		
-			<div class="rw">
-				<div class="description">
-               <h1>Item 04</h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-				</div>
-					<img src="https://via.placeholder.com/580x440" alt="">
-				</div>
-			</div> <!-- / row -->
-	
-       <!-- / Item 04 -->
-       
-       		<!-- Item 05 -->
-		<div id="item05" class="port">
-		
-			<div class="rw">
-				<div class="description">
-               <h1>Item 05</h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-				</div>
-					<img src="https://via.placeholder.com/580x440" alt="">
-				</div>
-			</div> <!-- / row -->
-	
-       <!-- / Item 05 -->
+    <section id="projects">
+      <div id="work" class="bg-portfolio">
+        <div class="container">
+           <div class="row">
+              <div class="col-12 js-scroll">
+                 <span class="subtitle">Confira alguns projetos...</span>
+                 <h2>Portfólio</h2>
+              </div>
+              <div class="col-lg-12">
+                 <ul class="work-filter">
+                    <div id="marker"></div>
+                    <li class="filter all active" data-filter="*">Todos</li>
+                    <li class="filter" data-filter=".branding">Digital</li>
+                    <li class="filter" data-filter=".web">Web</li>
+                    <li class="filter" data-filter=".mobile">Impressos</li>
+                 </ul>
+              </div>
+              <div class="col-lg-12 p-0">
+                 <div class="work-gallery" style="position: relative; height: 526.376px;">
+                    <div class="col-lg-4 col-md-6 col-sm-12 all photo mobile" style="position: absolute; left: 0px; top: 0px;">
+                       <div class="work">
+                             <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                          <div class="desc">
+                             <div class="con">
+                                <h3>
+                                   <a href="#item01">Work 1</a>
+                                </h3>
+                                <span>Branding, Photography</span>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 all web" style="position: absolute; left: 380px; top: 0px;">
+                       <div class="work">
+                          <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                          <div class="desc">
+                             <div class="con">
+                                <h3>
+                                   <a href="#item02">Work 2</a>
+                                </h3>
+                                <span>Mobile, Web, Branding</span>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 all branding web" style="position: absolute; left: 760px; top: 0px;">
+                       <div class="work">
+                          <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                          <div class="desc">
+                             <div class="con">
+                                <h3>
+                                   <a href="#item03">Work 3</a>
+                                </h3>
+                                <span>Mobile, Web</span>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 all web branding" style="position: absolute; left: 0px; top: 263.188px;">
+                       <div class="work">
+                          <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                          <div class="desc">
+                             <div class="con">
+                                <h3>
+                                   <a href="#item04">Work 4</a>
+                                </h3>
+                                <span>Web, Branding</span>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 all mobile" style="position: absolute; left: 380px; top: 263.188px;">
+                       <div class="work">
+                          <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                          <div class="desc">
+                             <div class="con">
+                                <h3>
+                                   <a href="#item05">Work 5</a>
+                                </h3>
+                                <span>Mobile, Photography</span>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 all branding" style="position: absolute; left: 760px; top: 263.188px;">
+                       <div class="work">
+                          <img class="img-fluid" src="https://via.placeholder.com/800x533" alt="">
+                          <div class="desc">
+                             <div class="con">
+                                <h3>
+                                   <a href="#item06">Work 6</a>
+                                </h3>
+                                <span>Web, Branding</span>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="text-center">
+                    <a href="#" class="botao" style="width: 160px; background-color: #20B787;">Ver + Projetos /&gt;</a>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+    </section>
 
-       
-       <!-- Item 06 -->
-		<div id="item06" class="port">
-		
-			<div class="rw">
-				<div class="description">
-               <h1>Item 06</h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-				</div>
-					<img src="https://via.placeholder.com/580x440" alt="">
-				</div>
-			</div> <!-- / row -->
-	
-		 <!-- / Item 06 -->
-
-      
-
-      <div id="work" class="bg-light">
+    <section id="blog">
+      <div class="footer" id="contato">
          <div class="container">
             <div class="row">
-               <div class="col-12">
-                  <span class="subtitle">Confira alguns projetos...</span>
-                  <h2>Portfólio</h2>
+               <div class="col-md-7">
+                  <span class="subtitle">sinta-se à vontade para contatar...</span>
+                  <h2 class="js-scroll"> Entre em Contato</h2>
                </div>
-               <div class="col-lg-12">
-                  <ul class="work-filter">
-                     <div id="marker"></div>
-                     <li class="filter all active" data-filter="*">Todos</li>
-                     <li class="filter" data-filter=".branding">Digital</li>
-                     <li class="filter" data-filter=".web">Web</li>
-                     <li class="filter" data-filter=".mobile">Impressos</li>
-                  </ul>
+               <div class="col-md-5">
+                  <form action="https://formspree.io/xnqbkklr" method="POST">
+                     <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input class="form-control form-control-sm" type="text" name="name" id="nome" required="">
+                     </div>
+                     <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input class="form-control form-control-sm" type="email" name="_replyto" id="email" required="">
+                     </div>
+                     <div class="form-group">
+                        <label for="textarea">
+                           Mensagem:
+                        </label>
+                           <textarea class="form-control" id="textarea" rows="3" name="message"></textarea>
+                     </div>
+                     <!-- <button type="submit" class="btn btn-primary mb-5">Enivar /></button> -->
+                     <input type="submit" class="btn btn-primary mb-5" value="Enivar">
+                  </form>
                </div>
-               <div class="col-lg-12 p-0">
-                  <div class="work-gallery" style="position: relative; height: 526.344px;">
-                     <div class="col-lg-4 col-md-6 col-sm-12 all web"
-                        style="position: absolute; left: 0px; top: 0px;">
-                        <div class="work">
-                              <img class="img-fluid" src="img/job-fibra.png" alt="">
-                           <div class="desc">
-                              <div class="con">
-                                 <h3>
-                                    <a href="#item01">website Fibracorp corretora</a>
-                                 </h3>
-                                 <span>Web, mobile</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 col-sm-12 all branding"
-                        style="position: absolute; left: 379.984px; top: 0px;">
-                        <div class="work">
-                           <img class="img-fluid" src="img/job-itaipava.png" alt="">
-                           <div class="desc">
-                              <div class="con">
-                                 <h3>
-                                    <a href="#item02">Projeto verão itaipava</a>
-                                 </h3>
-                                 <span>Art, Digital</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 col-sm-12 all mobile"
-                        style="position: absolute; left: 759.968px; top: 0px;">
-                        <div class="work">
-                           <img class="img-fluid" src="img/job-card.png" alt="">
-                           <div class="desc">
-                              <div class="con">
-                                 <h3>
-                                    <a href="#item03">cartão de visita Port serviços</a>
-                                 </h3>
-                                 <span>brand, print</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 col-sm-12 all web"
-                        style="position: absolute; left: 0px; top: 263.172px;">
-                        <div class="work">
-                           <img class="img-fluid" src="img/job-scott.png" alt="">
-                           <div class="desc">
-                              <div class="con">
-                                 <h3>
-                                    <a href="#item04">Landing page Scoot Transportes</a>
-                                 </h3>
-                                 <span>Web, Branding</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 col-sm-12 all branding"
-                        style="position: absolute; left: 379.984px; top: 263.172px;">
-                        <div class="work">
-                           <img class="img-fluid" src="img/job-insta.png" alt="">
-                           <div class="desc">
-                              <div class="con">
-                                 <h3>
-                                    <a href="#item05">posts e stories Vivinevo</a>
-                                 </h3>
-                                 <span>Mobile, Digital</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-6 col-sm-12 all mobile"
-                        style="position: absolute; left: 759.968px; top: 263.172px;">
-                        <div class="work">
-                           <img class="img-fluid" src="img/job-papelaria.png" alt="">
-                           <div class="desc">
-                              <div class="con">
-                                 <h3>
-                                    <a href="#item06">papelaria marca pessoal</a>
-                                 </h3>
-                                 <span>Print, Branding</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-12 text-center">
-                     <a href="https://thiag01.github.io/Portfolio_Thiago_Honorato.pdf" class="botao" style="background-color: #20B787;">Ver Projetos /></a>
-                  </div>
+               <div class="col-md-7 js-scroll">
+                  <h4>redes sociais</h4>
+                  <i class="far fa-envelope"></i>
+                  <i class="fab fa-linkedin-in"></i>
+                  <i class="fab fa-whatsapp"></i>
                </div>
+               <div class="col-md-5 mt-4">
+                  © 2020 Thiago Honorato | Design &amp; Code
+               </div>
+      <!-- 
+      <form action="https://formspree.io/xnqbkklr" method="POST">
+         <input type="text" name="name">
+         <input type="email" name="_replyto">
+         <input type="submit" value="Send">
+      </form>
+      -->
             </div>
          </div>
       </div>
-   </section>
-   <footer class="footer" id="contato">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-7">
-               <span class="subtitle">sinta-se à vontade para contatar...</span>
-               <h2> Entre em Contato</h2>
-            </div>
-            <div class="col-md-5">
-               <form action="https://formspree.io/xnqbkklr" method="POST">
-                  <div class="form-group">
-                     <label for="nome">Nome</label>
-                     <input class="form-control form-control-sm" type="text" name="name" id="nome"  required>
-                  </div>
-                  <div class="form-group">
-                     <label for="email">E-mail</label>
-                     <input class="form-control form-control-sm" type="email" name="_replyto" id="email" required>
-                  </div>
-                  <div class="form-group">
-                     <label for="textarea">
-                        Message:
-                     </label>
-                        <textarea class="form-control" id="textarea" rows="3" name="message"></textarea>
-                  </div>
-                  <!-- <button type="submit" class="btn btn-primary mb-5">Enivar /></button> -->
-                  <input type="submit" class="btn btn-primary mb-5" value="Enivar">
-               </form>
-            </div>
-            <div class="col-md-7">
-               <h4>redes sociais</h4>
-               <i class="far fa-envelope"></i>
-               <i class="fab fa-linkedin-in"></i>
-               <i class="fab fa-whatsapp"></i>
-            </div>
-            <div class="col-md-5 mt-4">
-               © 2020 Thiago Honorato | Design & Code
-            </div>
-   <!-- 
-   <form action="https://formspree.io/xnqbkklr" method="POST">
-      <input type="text" name="name">
-      <input type="email" name="_replyto">
-      <input type="submit" value="Send">
-   </form>
-   -->
-         </div>
-      </div>
-   </footer> 
-   <!-- End Works Section -->
-
-
-
-   <!-- jQuery -->
+    </section>
+   <div class='cursor small-circle'></div>
+   <div class='cursor big-circle'></div>
    <script>
-      var marker = document.querySelector("#marker");
-      var item = document.querySelectorAll(".work-filter .filter");
+              var marker = document.querySelector("#marker");
+              var item = document.querySelectorAll(".work-filter .filter");
 
 
-      function indicator(e) {
-         marker.style.left = e.offsetLeft + "px";
-         marker.style.width = e.offsetWidth + "px";
-      }
+              function indicator(e) {
+                marker.style.left = e.offsetLeft + "px";
+                marker.style.width = e.offsetWidth + "px";
+              }
 
-      item.forEach(link => {
-         link.addEventListener('click', (e) => {
-            indicator(e.target);
-         });
-      });
+              item.forEach(link => {
+                link.addEventListener('click', (e) => {
+                  indicator(e.target);
+                });
+              });
+    </script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+    <script src="js/autotyper.js"></script>
 
-
-
-      // var navbar = document.getElementById("navbar");
-      // var sticky = navbar.offsetTop;
-
-      // function myFunction() {
-      //    if (window.pageYOffset >= sticky) {
-      //        navbar.classList.add("sticky")
-      //    } else {
-      //       navbar.classList.remove("sticky");
-      //    }
-      // }
-   </script>
-   <script src="js/jquery.min.js"></script>
-   <script src="js/isotope.pkgd.min.js"></script>
-   <script src="js/imagesloaded.pkgd.min.js"></script>
-   <script src="js/custom.js"></script>
-   <script src="js/jquery-3.5.1.slim.min.js"></script>
-   <script type="text/javascript" src="js/autotyper.js"></script>
-   <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
-   <script type="text/javascript" src="js/popper.min.js"></script>
-   <script type="text/javascript" src="js/bootstrap.js"></script>
-   <script type="text/javascript" src="js/teste.js"></script>
-   <script type="text/javascript" src="js/gallery.js"></script>
-   <script type="text/javascript" src="js/menu-responsive.js"></script>
-
-
-</body>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/teste.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script type="text/javascript" src="js/menu-responsive.js"></script> 
+  </body>
 </html>
