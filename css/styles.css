@@ -113,7 +113,7 @@ body {
   background: #fff;
   font: normal 100%/1.4 sans-serif;
   font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
+  /* font-weight: 700; */
   font-size: 14px;
   line-height: 28px; /*arrumar*/
 }
@@ -143,19 +143,16 @@ header {
   left: 0;
   top: 0;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.03);
-  padding: 10px 0;
 }
 
 .logo {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-decoration: none;
-  font-weight: bold;
   line-height: 55px;
   /* padding: 0 20px; */
   color: #fff;
   float: left;
 }
-
 
 /* ------------------------------------------
   MASK
@@ -175,6 +172,7 @@ header {
   left: 0;
   top: 0;
 }
+
 #home{
   background: var(--primary-color);
   color: #fff;
@@ -251,7 +249,7 @@ header {
   color: #fff;
   width: 100%;
   float: left;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 .nav-collapse a:hover {
   color: var(--secondary-color);
@@ -282,7 +280,7 @@ header {
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
-    padding: 1.02em 1.09em;
+    padding: 1.02em;
     text-align: center;
     border-top: 0;
     float: left;
@@ -522,8 +520,11 @@ section#about {}
 --------------------------------------------- */
 .gallery {
   padding: 0;
-  position: relative;
-  overflow: hidden;
+  /* z-index: 666; */
+  position: absolute;
+  /* overflow: hidden; */
+  /* background: blue; */
+  height: 610px;
 }
 .gallery ul {
   padding-top: 50px;
@@ -581,6 +582,7 @@ section#about {}
 #work{
   padding: var(--padding);
   position: relative;
+  top: -100px;
   overflow: hidden;
 }
 #work .work-filter {
@@ -679,7 +681,7 @@ section#about {}
 
 #work .work .desc h3 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -771,22 +773,28 @@ section#about {}
 }
 
 .rw{
+  max-width: 1080px;
   padding: 0 10px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+.rw img{
+  width: 50%;
 }
 .port {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
-  padding-top: 100px;
+  padding: 100px 0;
   background: #ffffff;
-  background-color: #fafafa;
+  background-color: #1600ff;
   z-index: 103;
   visibility: hidden;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
-  border-bottom: 1px solid #d0d0d0;
+  /* border-bottom: 1px solid #d0d0d0; */
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -795,7 +803,6 @@ section#about {}
   float: left;
   width: 50%;
   max-height: 100%;
-  padding: 40px 40px;
   overflow: auto;
 }
 .port h1 {
@@ -827,8 +834,8 @@ section#about {}
 }
 
 .close {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2021%2021%22%0A%09%20enable-background%3D%22new%200%200%2021%2021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-1031.3622%29%22%3E%0A%09%3Cpath%20id%3D%22path2987%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M0%2C1031.4l21%2C21%22/%3E%0A%09%3Cpath%20id%3D%22path2989%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M21%2C1031.4l-21%2C21%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A%0A) no-repeat;
   position: absolute;
   right: 10px;
@@ -911,12 +918,13 @@ form .btn{
   background-color: var(--secondary-color);
   box-shadow: 0px 0px 47px -2px rgba(32, 183, 141, 0.32);
 }
+
 @media screen and (max-width: 768px) {
   header{
-    background: red;
+    background: var(--primary-color);
   }
   .nav-collapse, .nav-collapse ul{
-    width: 70%;
+    width: 100%;
   }
   #navegacao {
     width: 100%;
@@ -963,8 +971,8 @@ form .btn{
   .txt {
     margin-bottom: 0px;
   }
-  .laptop{
-    margin-top: 20px;
+  #Camada_1{
+    bottom: 0;
   }
   .hashtags{
     display: none;
@@ -1034,7 +1042,7 @@ form .btn{
 } */
 
 .bg-portfolio{
-  background: red;
+  background: white;
 }
 .menu-item:first-child {
   display: none;
@@ -1047,6 +1055,8 @@ form .btn{
 
 .notebook{
   position: relative;
+  display: flex;
+  /* justify-content: flex-start; */
 }
 
 /* 
@@ -1072,6 +1082,16 @@ form .btn{
     transform-origin: 50% 55%;
 }
 
+#flex-note{
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+.effect{
+  animation: effect-init 1 .8s linear;
+} 
+
 @keyframes App-logo-spin {
   from {
       transform: rotate(0deg);
@@ -1080,3 +1100,14 @@ form .btn{
       transform: rotate(360deg);
     }
   }
+
+  @keyframes effect-init {
+    from {
+      opacity: 0.1;
+      transform: translate(-100px, 0px); 
+      }
+    to {
+      opacity: 1;
+      transform: translate(0px, 0px); 
+      }
+    }
