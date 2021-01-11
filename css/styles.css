@@ -782,7 +782,7 @@ section#about {}
 .rw{
   max-width: 1080px;
   padding: 0 10px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0 auto;
 }
 .rw img{
@@ -794,9 +794,9 @@ section#about {}
   height: 100vh;
   top: 56px;
   left: 0;
-  /* padding: 100px 0; */
+  padding: 100px 0;
   background: #ffffff;
-  background-color: #1600ff;
+  /* background-color: #1600ff; */
   z-index: 103;
   visibility: hidden;
   -webkit-transform: translateY(-100%);
@@ -944,6 +944,9 @@ form .btn{
    width: 280px;
    margin-top: 26px;
    margin-left: -25px;
+  }
+  .port{
+    padding: 0;
   }
   .port .description{
     width: 100%;
