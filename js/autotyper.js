@@ -78,5 +78,5 @@ function animaScroll(){
 	})
 	console.log('sim');
 }
-
+alert('TESTE...');
 window.addEventListener('scroll', animaScroll);
