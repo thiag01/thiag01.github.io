@@ -1,16 +1,4 @@
-/* =============================================
- *
- *   FIXED RESPONSIVE NAV
- *
- *   (c) 2014 @adtileHQ
- *   http://www.adtile.me
- *   http://twitter.com/adtilehq
- *
- *   Free to use under the MIT License.
- *
- * ============================================= */
-
- :root{
+:root{
   --primary-color: #24262B;
   --secondary-color: #20B787;
   --font-primaryy: 'DM Sans', sans-serif;
@@ -589,7 +577,7 @@ section#about {}
 #work{
   padding: var(--padding);
   position: relative;
-  top: -100px;
+  top: 0;
   overflow: hidden;
 }
 #work .work-filter {
