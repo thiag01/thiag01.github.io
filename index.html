@@ -546,16 +546,34 @@
     </section>
    <div class='cursor small-circle'></div>
    <div class='cursor big-circle'></div>
-   <script type="text/javascript" src="js/tester.js"></script>
-   <script src="js/fastclick.js"></script>
-   <script src="js/scroll.js"></script>
-   <script src="js/fixed-responsive-nav.js"></script>
-   <script src="js/autotyper.js"></script>
+   <script>
+              var marker = document.querySelector("#marker");
+              var item = document.querySelectorAll(".work-filter .filter");
 
-   <script src="js/jquery.min.js"></script>
 
-   <script src="js/isotope.pkgd.min.js"></script>
-   <script src="js/imagesloaded.pkgd.min.js"></script>
-   <script src="js/custom.js"></script>
+              function indicator(e) {
+                marker.style.left = e.offsetLeft + "px";
+                marker.style.width = e.offsetWidth + "px";
+              }
+
+              item.forEach(link => {
+                link.addEventListener('click', (e) => {
+                  indicator(e.target);
+                });
+              });
+    </script>
+    <script src="js/fastclick.js"></script>  
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+    <script src="js/autotyper.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script type="text/javascript" src="js/teste.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script type="text/javascript" src="js/menu-responsive.js"></script> 
   </body>
 </html>
