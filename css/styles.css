@@ -937,7 +937,6 @@ form .btn{
 
 @media screen and (max-width: 768px) {
   header{
-    height: 85vh;
     background: var(--primary-color);
   }
   .nav-collapse, .nav-collapse ul{
