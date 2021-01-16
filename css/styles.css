@@ -1,4 +1,16 @@
-:root{
+/* =============================================
+ *
+ *   FIXED RESPONSIVE NAV
+ *
+ *   (c) 2014 @adtileHQ
+ *   http://www.adtile.me
+ *   http://twitter.com/adtilehq
+ *
+ *   Free to use under the MIT License.
+ *
+ * ============================================= */
+
+ :root{
   --primary-color: #24262B;
   --secondary-color: #20B787;
   --font-primaryy: 'DM Sans', sans-serif;
@@ -105,7 +117,16 @@ body {
   font-size: 14px;
   line-height: 28px; 
 }
+body::-webkit-scrollbar {
+  width: 5px;
+}
 
+body::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color) ;
+}
 section {
   /* border-bottom: 1px solid #999; */
   padding: 100px 0 0;
@@ -916,6 +937,7 @@ form .btn{
 
 @media screen and (max-width: 768px) {
   header{
+    height: 85vh;
     background: var(--primary-color);
   }
   .nav-collapse, .nav-collapse ul{
