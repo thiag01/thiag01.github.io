@@ -349,7 +349,7 @@ header {
 --------------------------------------------- */
 #slider{
   background-color: var(--primary-color);
-  height: 90vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   color: #fff;
