@@ -349,7 +349,7 @@ header {
 --------------------------------------------- */
 #slider{
   background-color: var(--primary-color);
-  height: 85vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   color: #fff;
@@ -938,6 +938,9 @@ form .btn{
 @media screen and (max-width: 768px) {
   header{
     background: var(--primary-color);
+  }
+  #slider{
+    height: 80vh;
   }
   .nav-collapse, .nav-collapse ul{
     width: 100%;
