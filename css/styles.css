@@ -1113,6 +1113,7 @@ form .btn{
 
 .effect{
   animation: effect-init 1 .8s linear;
+  font-weight: bold;
 } 
 
 @keyframes App-logo-spin {
