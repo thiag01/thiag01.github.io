@@ -942,7 +942,7 @@ form .btn{
     background: var(--primary-color);
   }
   #slider{
-    height: 90vh;
+    height: 85vh;
   }
   .nav-collapse, .nav-collapse ul{
     width: 100%;
