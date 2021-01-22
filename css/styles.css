@@ -120,7 +120,6 @@ body {
 body::-webkit-scrollbar {
   width: 5px;
 }
-
 body::-webkit-scrollbar-track {
   background: var(--primary-color);
 }
@@ -138,7 +137,9 @@ h1 {
   margin-bottom: .5em;
 }
 
-
+a:hover {
+  text-decoration: none !important;
+}
 
 /* ------------------------------------------
   FIXED HEADER
@@ -349,11 +350,12 @@ header {
 --------------------------------------------- */
 #slider{
   background-color: var(--primary-color);
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   align-items: center;
   color: #fff;
 }
+
 #slider .container{
   margin-top: -15px;
 }
@@ -363,7 +365,7 @@ header {
   border:1px solid var(--secondary-color);
   display: inline-block;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 8px;
   margin-right:  10px;
   margin-top: 20px;
@@ -940,7 +942,7 @@ form .btn{
     background: var(--primary-color);
   }
   #slider{
-    height: 80vh;
+    height: 90vh;
   }
   .nav-collapse, .nav-collapse ul{
     width: 100%;
@@ -1010,6 +1012,9 @@ form .btn{
     display: block;
     text-align: left;
   }
+  .big-circle {
+    opacity: 0;
+  }
 }
 
 .form-control:focus {
@@ -1062,7 +1067,7 @@ form .btn{
 }
 .js .js-scroll.ativo{
   opacity: 1;
-  transition: 1s;
+  transition: 1.7s;
   transform: translate3d(0px, 0, 0);
 }
 
@@ -1113,7 +1118,6 @@ form .btn{
 
 .effect{
   animation: effect-init 1 .8s linear;
-  font-weight: bold;
 } 
 
 @keyframes App-logo-spin {
@@ -1135,3 +1139,6 @@ form .btn{
       transform: translate(0px, 0px); 
       }
     }
+
+
+    
