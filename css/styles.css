@@ -15,6 +15,7 @@
   --secondary-color: #20B787;
   --font-primaryy: 'DM Sans', sans-serif;
   --padding-section: 70px 0;
+  --lineheight: 28px;
 }
 
 body, div,
@@ -115,7 +116,6 @@ body {
   font-family: 'DM Sans', sans-serif;
   /* font-weight: 700; */
   font-size: 14px;
-  line-height: 28px; 
 }
 body::-webkit-scrollbar {
   width: 5px;
@@ -138,7 +138,11 @@ h1 {
 }
 
 a:hover {
-  text-decoration: none !important;
+  text-decoration: red !important;
+}
+
+p{
+  line-height: var(--lineheight);
 }
 
 /* ------------------------------------------
@@ -357,18 +361,22 @@ header {
 }
 
 #slider .container{
-  margin-top: -15px;
+  margin-top: -50px;
 }
 
+#slider h1{
+  font-weight: 700;
+  font-size: 44px;
+}
 .botao{
   width: 160px; /* 45% - mobile*/
   border:1px solid var(--secondary-color);
   display: inline-block;
   text-align: center;
   text-decoration: none !important;
-  padding: 8px;
+  padding: 10px;
   margin-right:  10px;
-  margin-top: 20px;
+  margin-top: 10px;
   color: #fff;
   transition: .2s;
  }
@@ -608,7 +616,7 @@ section#about {}
   z-index: 10;
   background: transparent;
   margin-bottom: 30px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   border: 0;
   /* border-bottom: 1px solid #eeeeee0d; */
   list-style: none;
@@ -942,7 +950,7 @@ form .btn{
     background: var(--primary-color);
   }
   #slider{
-    height: 85vh;
+    height: 90vh;
   }
   .nav-collapse, .nav-collapse ul{
     width: 100%;
