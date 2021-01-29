@@ -710,8 +710,6 @@ header {
 
 #work .work .desc h3 a {
   color: var(--secondary-color);
-  /* border-bottom: 2px solid var(--secondary-color); */
-  padding: 10px 0;
   display: inline-block;
   /* text-decoration: none; */
 }
