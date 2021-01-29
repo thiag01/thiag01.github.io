@@ -1,16 +1,4 @@
-/* =============================================
- *
- *   FIXED RESPONSIVE NAV
- *
- *   (c) 2014 @adtileHQ
- *   http://www.adtile.me
- *   http://twitter.com/adtilehq
- *
- *   Free to use under the MIT License.
- *
- * ============================================= */
-
- :root{
+:root{
   --primary-color: #24262B;
   --secondary-color: #20B787;
   --font-primaryy: 'DM Sans', sans-serif;
@@ -187,7 +175,7 @@ header {
   top: 0;
 }
 
-#home{
+#quemsou{
   background: var(--primary-color);
   color: #fff;
 }
@@ -485,21 +473,16 @@ header {
 /* ------------------------------------------
   O QUE FACO
 --------------------------------------------- */
-#about{
+#oquefaco{
   background-color: var(--primary-color);
   padding-bottom: 100px;
 }
 
-section#about {}
-#about .container .col-md-5 .descricao{
-  /* border: 1px solid red; */
-}
-
-#about .container .col-md-5 .descricao .descri-titulo{
+#oquefaco .container .col-md-5 .descricao .descri-titulo{
   margin: 5px 0;
 }
 
-#about .container .col-md-5 .descricao:nth-child(4) {
+#oquefaco .container .col-md-5 .descricao:nth-child(4) {
   margin: 10px 0;
 }
 .color-about {
@@ -1090,7 +1073,7 @@ form .btn{
   display: none;
 }
 
-#home h2, #about h2{
+#quemsou h2{
   font-size: 26px;
   color: white;
 }
