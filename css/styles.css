@@ -485,6 +485,9 @@ header {
 #oquefaco .container .col-md-5 .descricao:nth-child(4) {
   margin: 10px 0;
 }
+#oquefaco h2 {
+   color: #fff;
+}
 .color-about {
   color: var(--secondary-color);
  
