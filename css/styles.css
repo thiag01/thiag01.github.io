@@ -85,7 +85,7 @@ input[type=text], textarea {
    max-width: 860px;
    height: 4400px;
    margin: 0 auto;
-   background: url("file:///C:/Users/thiago/Desktop/portfolio_2/assets/img/grid-3.png") repeat-y center;
+   background: url("./img/grid-3.png") repeat-y center;
    color: #fff;
 }
 
