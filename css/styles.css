@@ -533,6 +533,7 @@ section#formulario #forms .btn{
    .circle-bar {
       width: auto;
       display: block;
+      margin: 0 auto;
    }
    section.sobre-mim .box .descri-txt .descri-info div{
       width: 100%;
