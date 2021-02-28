@@ -518,7 +518,7 @@ section#formulario #forms .btn{
 
  @media only screen and (max-width: 650px) {
     :root{
-      font-size: 75%;
+      font-size: 65%;
     }
    .box{
       display: block;
