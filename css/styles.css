@@ -37,6 +37,7 @@ body {
    line-height: 1;
    font-family: 'Yantramanav', sans-serif;
    background: var(--primary-color);
+   overflow-x: hidden;
 }
 ol, ul {
    list-style: none;
@@ -85,7 +86,7 @@ input[type=text], textarea {
    max-width: 860px;
    height: 4400px;
    margin: 0 auto;
-   background: url("../img/grid-3.png") repeat-y center;
+   background: url("file:///C:/Users/thiago/Desktop/portfolio_2/img/grid-3.png") repeat-y center;
    color: #fff;
 }
 
@@ -220,8 +221,12 @@ section.skills-principais #progressbars>div {
 	width: 50%;
 	height: 5px;
 }
-
-section.skills-code .box-3 .rounded-bars .progress-text{
+.circle-bar{
+   display: flex;
+   width: 50%;
+   justify-content: space-around;
+}
+section.skills-code .box-3 .circle-bar .rounded-bars .progress-text{
    text-align: center;
    color: white;
    font-size: 2rem;
@@ -283,7 +288,7 @@ section.skills-code .box-3 .rounded-bars .progress-text{
 
 .box-3 {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    border: 1px solid var(--border-color);
    background: var(--primary-color);
 }
@@ -510,13 +515,7 @@ section#formulario #forms .btn{
 .progress-circle.p100 .value-bar { transform: rotate(360deg); }
 
 
-
-
-
-
-
-
- @media only screen and (max-width: 650px) {
+ @media only screen and (max-width: 760px) {
     :root{
       font-size: 65%;
     }
@@ -526,6 +525,17 @@ section#formulario #forms .btn{
    .box .descri-txt {
       margin-left: 0;
       margin-top: 4rem;
+   }
+   section.sobre-mim .box .descri-txt .descri-info {
+      flex-direction: column;
+      width: 100%;
+   }
+   .circle-bar {
+      width: auto;
+      display: block;
+   }
+   section.sobre-mim .box .descri-txt .descri-info div{
+      width: 100%;
    }
    .portfolio .portfolio-gallery {
       display: block;
