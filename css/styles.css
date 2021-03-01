@@ -721,7 +721,7 @@ header {
   /* border-bottom: 2px solid var(--secondary-color); */
   padding: 10px 0;
   display: inline-block;
-  /* text-decoration: none; */
+  text-decoration: underline !important;
 }
 
 #work .work .desc span {
