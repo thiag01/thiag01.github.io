@@ -28,7 +28,7 @@ time, mark, audio, video {
    font: inherit;
    vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers #66fcf1 #20B787*/
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
    display: block;
@@ -36,9 +36,7 @@ footer, header, hgroup, menu, nav, section {
 body {
    line-height: 1;
    font-family: 'Poppins', sans-serif;
-   /* font-family: 'Yantramanav', sans-serif; */
    background: var(--primary-color);
-   /* overflow-x: hidden; */
 }
 
 body::-webkit-scrollbar {
@@ -67,7 +65,6 @@ table {
    border-spacing: 0;
 }
 
-/* background-image: url(img_flwr.gif), url(paper.gif); url("file:///C:/Users/thiago/Desktop/portfolio_2/img/grid-3.png") repeat-y center*/
 html {
    scroll-behavior: smooth;
  }
@@ -76,7 +73,7 @@ header {
    overflow: hidden;
 }  
 div.logo{
-   /* z-index: 999; */
+   z-index: 9;
    position: relative;
 }
 .socials {
@@ -195,6 +192,7 @@ section#slider {
    height: 100vh;
    background: url("../img/grid-3.png") repeat-y center;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
 }
@@ -215,17 +213,19 @@ section#slider::after{
 
 section#slider h1{
 	max-width: 860px;
-	font-size: 8rem;
+	width: 100%;
 	margin-left: 50px;
-	/* position: relative; */
-	/* top:50%; */
-	/* left:50%; */
-	/* transform: translate(-50%, -50%); */
 	z-index: 9;
 	font-weight: 600;
+	font-size: 5.8rem;
+	line-height: 1.1;
 }
+
 .contato .contato-box {
-   display: flex; flex-direction: row;justify-content:space-between;padding: 20px 0;
+   display: flex; 
+   flex-direction: row;
+   justify-content:space-between;
+   padding: 20px 0;
 }
 
 .contato .contato-box .contato-info {
@@ -282,7 +282,6 @@ section.sobre-mim .box .descri-perfil picture img{
    text-align: left;
    min-height: 85px;
    display: flex;
-   /* align-items: center; */
    line-height: 28px;
    border: 1px solid var(--border-color);
    background:  var(--primary-color);
@@ -401,17 +400,6 @@ section.skills-code .box-3 .circle-bar .rounded-bars .progress-text{
    display: block;
 }
 
-/* .portfolio{
-   border: 1px solid greenyellow;
-}
-.portfolio .portfolio-titulo{
-   color: blue;
-   font-size: 2rem;
-}
-.portfolio .portfolio-gallery{
-   border: 1px solid green;
-} */
-
 .box-3 {
    display: flex;
    justify-content: space-evenly;
@@ -516,9 +504,7 @@ section#formulario #forms .btn{
    /* background-color: #4D642D; */ /* for debug */
    box-sizing: border-box;
 }
-/* Progress bar filling the whole right half for values above 50% */
 .progress-circle.over50 .first50-bar {
-   /*Progress bar for the first 50%, filling the whole right half*/
    position: absolute; /*needed for clipping*/
    clip: rect(0, 5em, 5em, 2.5em);
    background-color: #53777A;
@@ -531,108 +517,6 @@ section#formulario #forms .btn{
 .progress-circle.p10 .value-bar {transform: rotate(-181deg);}
 
 .progress-circle.p70 .value-bar { transform: rotate(-252deg)};
-
-
-/* Progress bar rotation position */
-/* .progress-circle.p0 .value-bar { display: none; }
-.progress-circle.p1 .value-bar { transform: rotate(4deg); }
-.progress-circle.p2 .value-bar { transform: rotate(7deg); }
-.progress-circle.p3 .value-bar { transform: rotate(11deg); }
-.progress-circle.p4 .value-bar { transform: rotate(14deg); }
-.progress-circle.p5 .value-bar { transform: rotate(18deg); }
-.progress-circle.p6 .value-bar { transform: rotate(22deg); }
-.progress-circle.p7 .value-bar { transform: rotate(25deg); }
-.progress-circle.p8 .value-bar { transform: rotate(29deg); }
-.progress-circle.p9 .value-bar { transform: rotate(32deg); }
-
-.progress-circle.p11 .value-bar { transform: rotate(40deg); }
-.progress-circle.p12 .value-bar { transform: rotate(43deg); }
-.progress-circle.p13 .value-bar { transform: rotate(47deg); }
-.progress-circle.p14 .value-bar { transform: rotate(50deg); }
-.progress-circle.p15 .value-bar { transform: rotate(54deg); }
-.progress-circle.p16 .value-bar { transform: rotate(58deg); }
-.progress-circle.p17 .value-bar { transform: rotate(61deg); }
-.progress-circle.p18 .value-bar { transform: rotate(65deg); }
-.progress-circle.p19 .value-bar { transform: rotate(68deg); }
-.progress-circle.p20 .value-bar { transform: rotate(72deg); }
-.progress-circle.p21 .value-bar { transform: rotate(76deg); }
-.progress-circle.p22 .value-bar { transform: rotate(79deg); }
-.progress-circle.p23 .value-bar { transform: rotate(83deg); }
-.progress-circle.p24 .value-bar { transform: rotate(86deg); }
-.progress-circle.p25 .value-bar { transform: rotate(90deg); }
-.progress-circle.p26 .value-bar { transform: rotate(94deg); }
-.progress-circle.p27 .value-bar { transform: rotate(97deg); }
-.progress-circle.p28 .value-bar { transform: rotate(101deg); }
-.progress-circle.p29 .value-bar { transform: rotate(104deg); }
-.progress-circle.p30 .value-bar { transform: rotate(108deg); }
-.progress-circle.p31 .value-bar { transform: rotate(112deg); }
-.progress-circle.p32 .value-bar { transform: rotate(115deg); }
-.progress-circle.p33 .value-bar { transform: rotate(119deg); }
-.progress-circle.p34 .value-bar { transform: rotate(122deg); }
-.progress-circle.p35 .value-bar { transform: rotate(126deg); }
-.progress-circle.p36 .value-bar { transform: rotate(130deg); }
-.progress-circle.p37 .value-bar { transform: rotate(133deg); }
-.progress-circle.p38 .value-bar { transform: rotate(137deg); }
-.progress-circle.p39 .value-bar { transform: rotate(140deg); }
-.progress-circle.p40 .value-bar { transform: rotate(144deg); }
-.progress-circle.p41 .value-bar { transform: rotate(148deg); }
-.progress-circle.p42 .value-bar { transform: rotate(151deg); }
-.progress-circle.p43 .value-bar { transform: rotate(155deg); }
-.progress-circle.p44 .value-bar { transform: rotate(158deg); }
-.progress-circle.p45 .value-bar { transform: rotate(162deg); }
-.progress-circle.p46 .value-bar { transform: rotate(166deg); }
-.progress-circle.p47 .value-bar { transform: rotate(169deg); }
-.progress-circle.p48 .value-bar { transform: rotate(173deg); }
-.progress-circle.p49 .value-bar { transform: rotate(176deg); }
-.progress-circle.p50 .value-bar { transform: rotate(180deg); }
-.progress-circle.p51 .value-bar { transform: rotate(184deg); }
-.progress-circle.p52 .value-bar { transform: rotate(187deg); }
-.progress-circle.p53 .value-bar { transform: rotate(191deg); }
-.progress-circle.p54 .value-bar { transform: rotate(194deg); }
-.progress-circle.p55 .value-bar { transform: rotate(198deg); }
-.progress-circle.p56 .value-bar { transform: rotate(202deg); }
-.progress-circle.p57 .value-bar { transform: rotate(205deg); }
-.progress-circle.p58 .value-bar { transform: rotate(209deg); }
-.progress-circle.p59 .value-bar { transform: rotate(212deg); }
-.progress-circle.p60 .value-bar { transform: rotate(216deg); }
-.progress-circle.p61 .value-bar { transform: rotate(220deg); }
-.progress-circle.p62 .value-bar { transform: rotate(223deg); }
-.progress-circle.p63 .value-bar { transform: rotate(227deg); }
-.progress-circle.p64 .value-bar { transform: rotate(230deg); }
-.progress-circle.p65 .value-bar { transform: rotate(234deg); }
-.progress-circle.p66 .value-bar { transform: rotate(238deg); }
-.progress-circle.p67 .value-bar { transform: rotate(241deg); }
-.progress-circle.p68 .value-bar { transform: rotate(245deg); }
-.progress-circle.p69 .value-bar { transform: rotate(248deg); }
- }
-.progress-circle.p71 .value-bar { transform: rotate(256deg); }
-.progress-circle.p72 .value-bar { transform: rotate(259deg); }
-.progress-circle.p73 .value-bar { transform: rotate(263deg); }
-.progress-circle.p74 .value-bar { transform: rotate(266deg); }
-.progress-circle.p75 .value-bar { transform: rotate(270deg); }
-.progress-circle.p76 .value-bar { transform: rotate(274deg); }
-.progress-circle.p77 .value-bar { transform: rotate(277deg); }
-.progress-circle.p78 .value-bar { transform: rotate(281deg); }
-.progress-circle.p79 .value-bar { transform: rotate(284deg); }
-.progress-circle.p80 .value-bar { transform: rotate(288deg); }
-.progress-circle.p81 .value-bar { transform: rotate(292deg); }
-.progress-circle.p82 .value-bar { transform: rotate(295deg); }
-.progress-circle.p83 .value-bar { transform: rotate(299deg); }
-.progress-circle.p84 .value-bar { transform: rotate(302deg); }
-.progress-circle.p85 .value-bar { transform: rotate(306deg); }
-.progress-circle.p86 .value-bar { transform: rotate(310deg); }
-.progress-circle.p87 .value-bar { transform: rotate(313deg); }
-.progress-circle.p88 .value-bar { transform: rotate(317deg); }
-.progress-circle.p89 .value-bar { transform: rotate(320deg); }
-.progress-circle.p90 .value-bar { transform: rotate(324deg); }
-.progress-circle.p91 .value-bar { transform: rotate(328deg); }
-.progress-circle.p92 .value-bar { transform: rotate(331deg); }
-.progress-circle.p93 .value-bar { transform: rotate(335deg); }
-.progress-circle.p94 .value-bar { transform: rotate(338deg); }
-.progress-circle.p95 .value-bar { transform: rotate(342deg); }
-.progress-circle.p96 .value-bar { transform: rotate(346deg); }
-.progress-circle.p97 .value-bar { transform: rotate(349deg); }
-.progress-circle.p98 .value-bar { transform: rotate(353deg); } */
 .progress-circle.p99 .value-bar { transform: rotate(356deg); }
 .progress-circle.p100 .value-bar { transform: rotate(360deg); }
 
@@ -743,98 +627,6 @@ section#formulario #forms .btn{
    white-space: nowrap;
  }
 
- /*Menu
- .menu{
-    background: var(--primary-color); 
-   display: flex;
-   justify-content: center;
-   background: url(file:///C:/Users/thiago/Desktop/portfolio_2/img/grid-3.png) repeat-y center;
- }
- .container-menu{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   padding: 20px;
-   position: relative;
-   border: 1px solid orangered; 
-   width: 90%;
-   background: orange;
- }
- /* .logo-container{
-   width: 20%;
- }
- .logo-container h1{
-   font-size: 1.6rem;
-   font-weight: 600;
- }
- .button-responsive{
-   background-color: transparent;
-   border: none;
-   cursor: pointer;
-   font-size: 2.8rem;
-   color: white;
- }
- .button-responsive:focus{
- outline: thin dotted;
-     outline: 0px auto -webkit-focus-ring-color;
-     outline-offset: 0px;
- }
- .container-links{
-     display: none;
- }
- .container-links li{
-     display: block;
-     padding: 0 24px;
- }
- .container-links li a{
-     color: #fff;
-     font-size: 1.8rem;
-      font-weight: 100; 
-     text-decoration: none;
- }
- .active {
-   background-color: var(--primary-color);
-   display: flex;
-   flex-direction: column;
-   align-content: center;
-   position: absolute;
-   left: 0;
-   top: 85px;
-   width: 100%;
-   height: 100vh;
-   z-index: 999;
-   text-align: center;
-   transition: 2s;
- }
- .active li{
-   border-bottom: 1px solid #33333326;
-   padding: 20px 23px;
- }
- .active li:last-child{border: none;}
-  */
- /*Section*/
- .wrap{
-   /* min-height: 100vh; */
- } 
- /*****
- Last Desktop
- *****/
- /* @media only screen and (min-width: 700px) {
-   .container-button-responsive{
-     display: none;
-   }
-   .container-links{
-     display: block;
-     min-width: 34%;
-   }
-   .container-links li{
-     display: inline-block;
-   }
- } */
-
-
-
 @keyframes example {
    from {height: 100vh;}
    to {height: 0vh;}
@@ -850,14 +642,11 @@ section#formulario #forms .btn{
    background: yellow;
  } 
  
-
- .fix-text::before{
-    content: "Designer com foco em ";
-    display: block;
- }
- .fix-text {
-    border: 1px solid red;
- }
+ .fix-text:before{
+	width: 80%;
+	content: "com foco em ";
+	/* border: 1px solid red; */
+} 
 
 section#formulario #forms .form-group .form-control::placeholder {
    font-family: 'Yantramanav', sans-serif;
@@ -1001,7 +790,7 @@ section#formulario #forms .form-group .form-control::placeholder {
  .navbar{
    position: absolute;
    width: 100%;
-   /* z-index: 10; */
+   z-index: 10;
    padding: 25px 0;
    transition: all 0.3s ease;
  }
@@ -1182,15 +971,6 @@ section#formulario #forms .form-group .form-control::placeholder {
    transform: rotate(180deg);
  }
   
- /* @keyframes fill {
-   0% {
-     transform: rotate(0deg);
-   }
-   100% {
-     transform: rotate(126deg);
-   }
- } */
- 
  .circle-wrap .inside-circle {
    width: 130px;
    height: 130px;
@@ -1225,6 +1005,10 @@ section#formulario #forms .form-group .form-control::placeholder {
       width: 0px;
       background: transparent; /* make scrollbar transparent */
    }
+   .wrap{
+     display: block;
+     width: 100%;
+   }
    .menu-list li a {
       margin-right: 0;
    }
@@ -1245,6 +1029,7 @@ section#formulario #forms .form-group .form-control::placeholder {
  
 .wrap{
     color: var(--secondary-color);
+    text-align: left;
 }
 
 .container:hover {
@@ -1300,22 +1085,8 @@ section#formulario #forms .form-group .form-control::placeholder {
    background: var(--secondary-color);
    width: 30%;
  }
-
- .backtotop{
-    color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
- }
-
 /*  ============================================================================================================  */
 
-.boxe {
-   /* position: relative; */
-   /* max-height: 300px; */
-   /* border-radius: 4px; */
-   /* overflow: hidden; */
-   /* box-shadow: 0 1.4px 1.7px rgba(0, 0, 0, 0.017), 0 3.3px 4px rgba(0, 0, 0, 0.024), 0 6.3px 7.5px rgba(0, 0, 0, 0.03), 0 11.2px 13.4px rgba(0, 0, 0, 0.036), 0 20.9px 25.1px rgba(0, 0, 0, 0.043), 0 50px 60px rgba(0, 0, 0, 0.06); */
- }
  .boxe .hide {
    opacity: 0;
  }
