@@ -213,7 +213,7 @@ section#slider::after{
 
 section#slider h1{
 	max-width: 860px;
-	width: 100%;
+	width: 90%;
 	margin-left: 50px;
 	z-index: 9;
 	font-weight: 600;
