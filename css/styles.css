@@ -5,7 +5,7 @@
 	--primary-color: #101010;
 	--secondary-color: #f41e52; /*verde  #20B787*/
     --border-color: #2d2d2d;
-	font-size: 62%; /*controle das medidas rem 9.6PX */
+	font-size: 61%; /*controle das medidas rem 9.6PX */
 }
 
 html, body, div, span, applet, object, iframe,
@@ -166,14 +166,14 @@ textarea:focus {
    max-width: 860px;
    height: auto;
    margin: 0 auto;
-   background: url("img/grid-3.png") repeat-y center;
+   background: url("../img/grid-3.png") repeat-y center;
    color: #fff;
 }
 
 .header{
    width: 100%;
    height: 100vh;
-   background: rgba(115, 255, 0, 0.116) url("img/grid-3.png") repeat-y center;
+   background: rgba(115, 255, 0, 0.116) url("../img/grid-3.png") repeat-y center;
 }
 
 .mt{
@@ -193,10 +193,10 @@ section {
 section#slider {
    width: 100%;
    height: 100vh;
-   background: url("img/grid-3.png") repeat-y center;
-   /* display: flex; */
-   /* justify-content: center; */
-   /* align-items: center; */
+   background: url("../img/grid-3.png") repeat-y center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 section#slider::after{
@@ -216,10 +216,11 @@ section#slider::after{
 section#slider h1{
 	max-width: 860px;
 	font-size: 8rem;
-	position: relative;
-	top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+	margin-left: 50px;
+	/* position: relative; */
+	/* top:50%; */
+	/* left:50%; */
+	/* transform: translate(-50%, -50%); */
 	z-index: 9;
 	font-weight: 600;
 }
@@ -260,9 +261,9 @@ section.sobre-mim h2, section.skills-principais h2, section.skills-code h2, sect
    font-weight: bold;
 }
 section.sobre-mim .box .descri-txt .descri-info {
-   display: flex; 
+   display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: space-between;
 }
 
 section.sobre-mim .box .descri-txt .descri-info span{
@@ -270,7 +271,7 @@ section.sobre-mim .box .descri-txt .descri-info span{
 }
 
 section.sobre-mim .box .descri-txt .descri-info div{
-   width: 50%;
+   width: auto;
 }
 
 section.sobre-mim .box .descri-perfil picture img{
@@ -281,7 +282,7 @@ section.sobre-mim .box .descri-perfil picture img{
    text-align: left;
    min-height: 85px;
    display: flex;
-   align-items: center;
+   /* align-items: center; */
    line-height: 28px;
    border: 1px solid var(--border-color);
    background:  var(--primary-color);
@@ -291,7 +292,7 @@ section.sobre-mim .box .descri-perfil picture img{
 }
 
 .box .descri-perfil {
-   flex: 0 0 60px;
+   flex: 0 20px;
 }
  
 .box .descri-txt{
@@ -868,7 +869,7 @@ section#formulario #forms .form-group .form-control::placeholder {
    color: white;
    position: absolute;
    right: 0;
-   bottom: 10px;
+   bottom: 15px;
    font-size: 1.8rem;
 }
 
@@ -1068,7 +1069,7 @@ section#formulario #forms .form-group .form-control::placeholder {
      position: fixed;
      height: 100vh;
      width: 100%;
-     max-width: 400px;
+     /* max-width: 400px; */
      left: -100%;
      top: 0px;
      z-index: 10;
@@ -1409,7 +1410,7 @@ section#formulario #forms .form-group .form-control::placeholder {
    z-index: 2;
  }
  .blury-card:hover .frame {
-   width: calc(100% - 150px);
+   width: calc(100% - 70px);
    height: calc(100% - 70px);
    opacity: 1;
    position: absolute;
