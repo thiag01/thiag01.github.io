@@ -1,10 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap');
 
 
 :root{
 	--primary-color: #101010;
 	--secondary-color: #f41e52; /*verde  #20B787*/
-    --border-color: #2d2d2d;
+        --border-color: #2d2d2d;
 	font-size: 61%; /*controle das medidas rem 9.6PX */
 }
 
