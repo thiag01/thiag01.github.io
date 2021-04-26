@@ -962,7 +962,7 @@ section#formulario #forms .form-group .form-control::placeholder {
  .circle-wrap .circle .mask.full,
  .circle-wrap .circle .fill {
    animation: fill ease-in-out 3s;
-   transform: rotate(90deg);
+   transform: rotate(180deg);
  }
   
  .circle-wrap .inside-circle {
