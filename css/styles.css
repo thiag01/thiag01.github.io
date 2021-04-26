@@ -338,7 +338,7 @@ section.skills-principais #progressbars {
 }
   
 section.skills-principais #progressbars>div {
-	background-color: var(--secondary-color);
+	/* background-color: var(--secondary-color); */
 	width: 50%;
 	height: 5px;
 }
@@ -636,12 +636,6 @@ section#formulario #forms .btn{
    width: 0%;
 
  }
-.ativo{
-   width: 100%;
-   transition: width 5s;
-   background: yellow;
- } 
- 
  .fix-text:before{
 	width: 80%;
 	content: "com foco em ";
@@ -968,7 +962,7 @@ section#formulario #forms .form-group .form-control::placeholder {
  .circle-wrap .circle .mask.full,
  .circle-wrap .circle .fill {
    animation: fill ease-in-out 3s;
-   transform: rotate(180deg);
+   transform: rotate(90deg);
  }
   
  .circle-wrap .inside-circle {
@@ -1200,3 +1194,15 @@ section#formulario #forms .form-group .form-control::placeholder {
    opacity: 1;
    transition: all 0.3s ease-in-out;
  }
+
+ .bars-full{
+  width: 30%; 
+  height: 100%; 
+  background: var(--secondary-color);
+ }
+ 
+ .ativo{
+  width: 100%;
+  transition: width 3s;
+  background: var(--secondary-color);
+}
