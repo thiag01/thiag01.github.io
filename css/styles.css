@@ -523,7 +523,7 @@ section#formulario #forms .btn{
 
  @media only screen and (max-width: 760px) {
     :root{
-      font-size: 60%;
+      font-size: 55%;
     }
    .socials {
       display: none;
