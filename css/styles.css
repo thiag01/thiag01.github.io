@@ -254,7 +254,6 @@ section#slider h1{
 }
 .tag-title {
    color: var(--secondary-color);
-   font-weight: 100;
 }
 section.sobre-mim h2, section.skills-principais h2, section.skills-code h2, section.portfolio h2, section.contato h2, section#formulario h2{
    font-size: 2.8rem;
